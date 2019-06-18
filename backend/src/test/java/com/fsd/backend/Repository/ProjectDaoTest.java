@@ -61,7 +61,7 @@ private final Logger log = LoggerFactory.getLogger(ProjectDaoTest.class);
 	private Project returnProject = null;
 	
 	/** The project string. */
-	private String projectString;
+	private String projectString = "{\"projectId\":1,\"project\":\"Project\",\"startDate\":\"2019-05-27\",\"endDate\":\"2019-05-29\",\"priority\":1}";
 	
 	
 	/**
