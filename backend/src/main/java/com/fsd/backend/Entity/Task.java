@@ -56,15 +56,15 @@ public class Task implements Serializable{
 	
 	
 	/** The parent task. */
-	@OneToOne
+	@OneToOne(cascade = CascadeType.ALL, optional = false)
 	private ParentTask parentTask;
 
 	/** The project. */
-	@ManyToOne
+	@ManyToOne(cascade = CascadeType.MERGE, optional = false)
 	private Project project;
 	
 	/** The user. */
-	@ManyToOne
+	@ManyToOne(cascade = CascadeType.MERGE, optional = false)	
 	private User user;
 	
 	/** The status. */

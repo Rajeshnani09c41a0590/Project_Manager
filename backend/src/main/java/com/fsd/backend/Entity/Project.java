@@ -47,6 +47,8 @@ public class Project implements Serializable {
 
 	/** The task. */
 	@OneToMany
+	@JoinTable(name="TASK_ID",joinColumns=@JoinColumn(name="PROJECT_ID"),
+	           inverseJoinColumns = @JoinColumn(name="TASK_ID"))
 	private List<Task> task = new ArrayList();
 	
 	/** The user. */
