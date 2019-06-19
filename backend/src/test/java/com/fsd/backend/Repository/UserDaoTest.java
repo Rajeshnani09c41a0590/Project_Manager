@@ -39,62 +39,56 @@ import com.google.common.collect.Lists;
 @DataJpaTest
 @EnableTransactionManagement
 public class UserDaoTest {
-	
+
 	private final Logger log = LoggerFactory.getLogger(UserDaoTest.class);
-	
+
 	@Autowired
 	private TestEntityManager em;
-	
+
 	@Autowired
-	private UserRepo userRepo; 
-	
-	
+	private UserRepo userRepo;
+
 	private String testUser = "{\"employeeId\": \"12345\", \"firstName\": \"Fname1\",\"lastName\": \"Lname1\"}";
-	
-	private User user2ConstTest = null; 
-	
+
+	private User user2ConstTest = null;
+
 	private User user = null;
-	
+
 	@Before
-	public void createUser() throws IOException
-	{
+	public void createUser() throws IOException {
 		user = new User();
 		user = createObject(testUser);
-        user2ConstTest = new User(user.getUserId(),user.getFirstName(),user.getLastName(),user.getEmployeeId(), null, null);
+		user2ConstTest = new User(user.getUserId(), user.getFirstName(), user.getLastName(), user.getEmployeeId(), null,
+				null);
 	}
-	
-	
+
 	@Test
-    @Rollback(false)
-   	public void testAddUser()
-    {
- 	    User returnUser = null;
- 	    returnUser=userRepo.save(user);
- 	    assertEquals(returnUser.getEmployeeId(), user.getEmployeeId());
+	@Rollback(false)
+	public void testAddUser() {
+		User returnUser = null;
+		returnUser = userRepo.save(user);
+		assertEquals(returnUser.getEmployeeId(), user.getEmployeeId());
 	}
-	
+
 	@Test
-    @Rollback(false)
-   	public void testUpdateUser()
-    {
- 	    User returnUser = null;
- 	    returnUser=userRepo.save(user);
- 	    assertEquals(returnUser.getEmployeeId(), user.getEmployeeId());
+	@Rollback(false)
+	public void testUpdateUser() {
+		User returnUser = null;
+		returnUser = userRepo.save(user);
+		assertEquals(returnUser.getEmployeeId(), user.getEmployeeId());
 	}
- 
-	
- 	@Test
-	public void testfindUserById()
-	{
- 		User returnUser=userRepo.save(user);
-    	Optional<User> retUser = userRepo.findById(returnUser.getUserId());
-    	assertEquals(retUser.get().getEmployeeId(),user.getEmployeeId());
+
+	@Test
+	public void testfindUserById() {
+		User returnUser = userRepo.save(user);
+		Optional<User> retUser = userRepo.findById(returnUser.getUserId());
+		assertEquals(retUser.get().getEmployeeId(), user.getEmployeeId());
 	}
- 	
- 	private User createObject(String json) throws IOException{
+
+	private User createObject(String json) throws IOException {
 		ObjectMapper objMapper = new ObjectMapper();
-		return objMapper.readValue(json,User.class);
-		
+		return objMapper.readValue(json, User.class);
+
 	}
- 
+
 }
