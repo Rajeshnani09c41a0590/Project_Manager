@@ -1,0 +1,27 @@
+
+ 
+   .delete-btn:hover, .delete-btn:focus,
+   .delete-btn:active:hover, .delete-btn:active:focus{
+    text-decoration: underline;
+   }
+      
+   nav {
+    margin: 0;
+    width: 100%;
+    
+  }
+  
+  .navbar {
+    padding: 6 rem;
+    font-family: cursive;
+    background-color:skyblue;
+    
+     padding:10px;
+    font-size: x-large;
+     text-align-last: left;
+  }
+  .navbar-nav li{
+    padding: 20px;
+  }
+ 
+  

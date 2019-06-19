@@ -1,0 +1,65 @@
+.container
+{
+  max-width: 1500px;
+  font-family: cursive;
+  color:indigo;
+}
+.column {
+    box-sizing: border-box;
+  }
+  
+  .column {
+ 
+    padding: 5px;
+    margin:5px;
+    background:lightcyan;
+    color:brown;
+    border:1px ;
+
+  }
+  
+  #sectionId{
+    text-align:left;
+    background:rgb(240, 249, 255);
+  }
+
+  .employeeId{
+   font-weight: bold;  
+   font-style: normal;
+   font-size: 18px;
+  }
+
+  .container{
+    width:100%;
+  }
+  
+  form{
+    padding-left: 30%;
+  }
+ 
+  #collapseButton{
+    width:100%;
+    background-color: lightseagreen;
+  }
+
+  #resetUserForm{
+    width:25%;
+  }
+
+  .hrTag{
+    border-top: 1px solid #d5d5d5;
+    width:100%;
+    margin-top:1.5rem;
+    margin-bottom:1.5rem;
+  }
+  
+  
+  #reduceColumn{
+    width:20%;
+  }
+
+  .btn-secondary {
+    background-color: lightskyblue;
+  }
+
+ 

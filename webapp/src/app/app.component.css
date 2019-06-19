@@ -1,0 +1,14 @@
+h1{
+    background-color:steelblue;
+      font-family: cursive;
+      font-stretch: wider;
+            color:yellow;
+            padding:2rem;
+            font-size:58px;
+            background-image: url("/src/images/Logo.png");
+            background-position-x: left;
+            background-position-y: center;
+            background-repeat: no-repeat;
+}
+
+
