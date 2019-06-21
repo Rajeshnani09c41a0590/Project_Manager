@@ -1,0 +1,2238 @@
+Return-Path: <sachin.kumar346a39@gmail.com>
+Received: from 172.18.1.173 ([180.151.37.162])
+        by smtp.gmail.com with ESMTPSA id f2sm18212854pgs.83.2019.06.20.07.54.38
+        for <sachin.kumar346a39@gmail.com>
+        (version=TLS1 cipher=ECDHE-RSA-AES128-SHA bits=128/128);
+        Thu, 20 Jun 2019 07:54:40 -0700 (PDT)
+From: address not configured yet <sachin.kumar346a39@gmail.com>
+X-Google-Original-From: address not configured yet <nobody@nowhere>
+Date: Thu, 20 Jun 2019 20:23:17 +0530 (IST)
+To: sachin.kumar346a39@gmail.com
+Message-ID: <1595730263.10.1561042399969.JavaMail.Admin@Javafs>
+Subject: aaa - Build # 14 - SUCCESS!
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_9_661706338.1561042397191"
+X-Jenkins-Job: aaa
+
+------=_Part_9_661706338.1561042397191
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Hi Sachin Kumar,
+      Build for the aaa  has been triggered. PFB below the details of the same.
+      The build logs have been attached with the email for your reference.
+      Build Number: # 14
+      Build Status: SUCCESS
+      For more detailed results access the same via: http://localhost:8080/job/aaa/14/
+     Regards,
+     Sachin-Kumar346a39 - Jenkins Admin
+------=_Part_9_661706338.1561042397191
+Content-Type: application/octet-stream; name=build.log
+Content-Transfer-Encoding: quoted-printable
+Content-Disposition: attachment; filename=build.log
+
+Started by user Sachin Kumar
+Running in Durability level: MAX_SURVIVABILITY
+[Pipeline] Start of Pipeline
+[Pipeline] node
+Running on Jenkins in C:\Users\Admin\.jenkins\workspace\aaa
+[Pipeline] {
+[Pipeline] stage
+[Pipeline] { (GIT checkout)
+[Pipeline] git
+No credentials specified
+ > git.exe rev-parse --is-inside-work-tree # timeout=3D10
+Fetching changes from the remote Git repository
+ > git.exe config remote.origin.url https://github.com/Sachin-Kumar346a39/P=
+roject-Manager.git # timeout=3D10
+Fetching upstream changes from https://github.com/Sachin-Kumar346a39/Projec=
+t-Manager.git
+ > git.exe --version # timeout=3D10
+ > git.exe fetch --tags --progress https://github.com/Sachin-Kumar346a39/Pr=
+oject-Manager.git +refs/heads/*:refs/remotes/origin/*
+ > git.exe rev-parse "refs/remotes/origin/master^{commit}" # timeout=3D10
+ > git.exe rev-parse "refs/remotes/origin/origin/master^{commit}" # timeout=
+=3D10
+Checking out Revision bd483f63e854a2c1a913789f043f1f2d32275269 (refs/remote=
+s/origin/master)
+ > git.exe config core.sparsecheckout # timeout=3D10
+ > git.exe checkout -f bd483f63e854a2c1a913789f043f1f2d32275269
+ > git.exe branch -a -v --no-abbrev # timeout=3D10
+ > git.exe branch -D master # timeout=3D10
+ > git.exe checkout -b master bd483f63e854a2c1a913789f043f1f2d32275269
+Commit message: "Added UI changes"
+ > git.exe rev-list --no-walk bd483f63e854a2c1a913789f043f1f2d32275269 # ti=
+meout=3D10
+[Pipeline] }
+[Pipeline] // stage
+[Pipeline] stage
+[Pipeline] { (Build )
+[Pipeline] bat
+
+C:\Users\Admin\.jenkins\workspace\aaa>mvn clean install -f backend=20
+[INFO] Scanning for projects...
+[INFO]=20
+[INFO] --------------------------------------------------------------------=
+----
+[INFO] Building backend 0.0.1-SNAPSHOT
+[INFO] --------------------------------------------------------------------=
+----
+[INFO]=20
+[INFO] --- maven-clean-plugin:3.1.0:clean (default-clean) @ backend ---
+[INFO] Deleting C:\Users\Admin\.jenkins\workspace\aaa\backend\target
+[INFO]=20
+[INFO] --- jacoco-maven-plugin:0.7.6.201602180812:prepare-agent (jacoco-ini=
+tialize) @ backend ---
+[INFO] argLine set to -javaagent:C:\\Users\\Admin\\.m2\\repository\\org\\ja=
+coco\\org.jacoco.agent\\0.7.6.201602180812\\org.jacoco.agent-0.7.6.20160218=
+0812-runtime.jar=3Ddestfile=3DC:\\Users\\Admin\\.jenkins\\workspace\\aaa\\b=
+ackend\\target\\jacoco.exec
+[INFO]=20
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ bac=
+kend ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 0 resource
+[INFO]=20
+[INFO] --- maven-compiler-plugin:3.8.0:compile (default-compile) @ backend =
+---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 17 source files to C:\Users\Admin\.jenkins\workspace\aaa\b=
+ackend\target\classes
+[INFO] /C:/Users/Admin/.jenkins/workspace/aaa/backend/src/main/java/com/fsd=
+/backend/Entity/Project.java: Some input files use unchecked or unsafe oper=
+ations.
+[INFO] /C:/Users/Admin/.jenkins/workspace/aaa/backend/src/main/java/com/fsd=
+/backend/Entity/Project.java: Recompile with -Xlint:unchecked for details.
+[INFO]=20
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResource=
+s) @ backend ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO]=20
+[INFO] --- maven-compiler-plugin:3.8.0:testCompile (default-testCompile) @ =
+backend ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 12 source files to C:\Users\Admin\.jenkins\workspace\aaa\b=
+ackend\target\test-classes
+[INFO] /C:/Users/Admin/.jenkins/workspace/aaa/backend/src/test/java/com/fsd=
+/backend/Controller/ProjectControllerTest.java: Some input files use unchec=
+ked or unsafe operations.
+[INFO] /C:/Users/Admin/.jenkins/workspace/aaa/backend/src/test/java/com/fsd=
+/backend/Controller/ProjectControllerTest.java: Recompile with -Xlint:unche=
+cked for details.
+[INFO]=20
+[INFO] --- maven-surefire-plugin:2.22.1:test (default-test) @ backend ---
+[INFO]=20
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running com.fsd.backend.BackendTest
+[WARNING] Tests run: 1, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0=
+.149 s - in com.fsd.backend.BackendTest
+[INFO] Running com.fsd.backend.Controller.ParentControllerTest
+20:22:32.741 [main] DEBUG org.springframework.test.context.junit4.SpringJUn=
+it4ClassRunner - SpringJUnit4ClassRunner constructor called with [class com=
+.fsd.backend.Controller.ParentControllerTest]
+20:22:32.753 [main] DEBUG org.springframework.test.context.BootstrapUtils -=
+ Instantiating CacheAwareContextLoaderDelegate from class [org.springframew=
+ork.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+20:22:32.780 [main] DEBUG org.springframework.test.context.BootstrapUtils -=
+ Instantiating BootstrapContext using constructor [public org.springframewo=
+rk.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springf=
+ramework.test.context.CacheAwareContextLoaderDelegate)]
+20:22:32.849 [main] DEBUG org.springframework.test.context.BootstrapUtils -=
+ Instantiating TestContextBootstrapper for test class [com.fsd.backend.Cont=
+roller.ParentControllerTest] from class [org.springframework.boot.test.auto=
+configure.web.servlet.WebMvcTestContextBootstrapper]
+20:22:32.925 [main] INFO org.springframework.boot.test.autoconfigure.web.se=
+rvlet.WebMvcTestContextBootstrapper - Neither @ContextConfiguration nor @Co=
+ntextHierarchy found for test class [com.fsd.backend.Controller.ParentContr=
+ollerTest], using SpringBootContextLoader
+20:22:32.941 [main] DEBUG org.springframework.test.context.support.Abstract=
+ContextLoader - Did not detect default resource location for test class [co=
+m.fsd.backend.Controller.ParentControllerTest]: class path resource [com/fs=
+d/backend/Controller/ParentControllerTest-context.xml] does not exist
+20:22:32.942 [main] DEBUG org.springframework.test.context.support.Abstract=
+ContextLoader - Did not detect default resource location for test class [co=
+m.fsd.backend.Controller.ParentControllerTest]: class path resource [com/fs=
+d/backend/Controller/ParentControllerTestContext.groovy] does not exist
+20:22:32.943 [main] INFO org.springframework.test.context.support.AbstractC=
+ontextLoader - Could not detect default resource locations for test class [=
+com.fsd.backend.Controller.ParentControllerTest]: no resource found for suf=
+fixes {-context.xml, Context.groovy}.
+20:22:33.037 [main] INFO org.springframework.test.context.support.Annotatio=
+nConfigContextLoaderUtils - Could not detect default configuration classes =
+for test class [com.fsd.backend.Controller.ParentControllerTest]: ParentCon=
+trollerTest does not declare any static, non-private, non-final, nested cla=
+sses annotated with @Configuration.
+20:22:33.423 [main] DEBUG org.springframework.test.context.support.ActivePr=
+ofilesUtils - Could not find an 'annotation declaring class' for annotation=
+ type [org.springframework.test.context.ActiveProfiles] and class [com.fsd.=
+backend.Controller.ParentControllerTest]
+20:22:33.689 [main] DEBUG org.springframework.context.annotation.ClassPathS=
+canningCandidateComponentProvider - Identified candidate component class: f=
+ile [C:\Users\Admin\.jenkins\workspace\aaa\backend\target\classes\com\fsd\b=
+ackend\BackendApplication.class]
+20:22:33.692 [main] INFO org.springframework.boot.test.context.SpringBootTe=
+stContextBootstrapper - Found @SpringBootConfiguration com.fsd.backend.Back=
+endApplication for test class com.fsd.backend.Controller.ParentControllerTe=
+st
+20:22:33.695 [main] DEBUG org.springframework.boot.test.autoconfigure.web.s=
+ervlet.WebMvcTestContextBootstrapper - @TestExecutionListeners is not prese=
+nt for class [com.fsd.backend.Controller.ParentControllerTest]: using defau=
+lts.
+20:22:33.696 [main] INFO org.springframework.boot.test.autoconfigure.web.se=
+rvlet.WebMvcTestContextBootstrapper - Loaded default TestExecutionListener =
+class names from location [META-INF/spring.factories]: [org.springframework=
+.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.b=
+oot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.=
+boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springf=
+ramework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestE=
+xecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.M=
+ockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.tes=
+t.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframe=
+work.test.context.web.ServletTestExecutionListener, org.springframework.tes=
+t.context.support.DirtiesContextBeforeModesTestExecutionListener, org.sprin=
+gframework.test.context.support.DependencyInjectionTestExecutionListener, o=
+rg.springframework.test.context.support.DirtiesContextTestExecutionListener=
+, org.springframework.test.context.transaction.TransactionalTestExecutionLi=
+stener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListen=
+er]
+20:22:33.745 [main] INFO org.springframework.boot.test.autoconfigure.web.se=
+rvlet.WebMvcTestContextBootstrapper - Using TestExecutionListeners: [org.sp=
+ringframework.test.context.web.ServletTestExecutionListener@4877919f, org.s=
+pringframework.test.context.support.DirtiesContextBeforeModesTestExecutionL=
+istener@47a7c93e, org.springframework.boot.test.mock.mockito.MockitoTestExe=
+cutionListener@6f9ab79d, org.springframework.boot.test.autoconfigure.Spring=
+BootDependencyInjectionTestExecutionListener@64ae105d, org.springframework.=
+test.context.support.DirtiesContextTestExecutionListener@10a18e3e, org.spri=
+ngframework.test.context.transaction.TransactionalTestExecutionListener@693=
+64b2d, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListene=
+r@53aa2fc9, org.springframework.boot.test.mock.mockito.ResetMocksTestExecut=
+ionListener@4792f119, org.springframework.boot.test.autoconfigure.restdocs.=
+RestDocsTestExecutionListener@5bde57ab, org.springframework.boot.test.autoc=
+onfigure.web.client.MockRestServiceServerResetTestExecutionListener@ea00de,=
+ org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOn=
+FailureTestExecutionListener@23ca36d, org.springframework.boot.test.autocon=
+figure.web.servlet.WebDriverTestExecutionListener@52f6900a]
+20:22:33.752 [main] DEBUG org.springframework.test.annotation.ProfileValueU=
+tils - Retrieved @ProfileValueSourceConfiguration [null] for test class [co=
+m.fsd.backend.Controller.ParentControllerTest]
+20:22:33.753 [main] DEBUG org.springframework.test.annotation.ProfileValueU=
+tils - Retrieved ProfileValueSource type [class org.springframework.test.an=
+notation.SystemProfileValueSource] for class [com.fsd.backend.Controller.Pa=
+rentControllerTest]
+20:22:33.754 [main] DEBUG org.springframework.test.annotation.ProfileValueU=
+tils - Retrieved @ProfileValueSourceConfiguration [null] for test class [co=
+m.fsd.backend.Controller.ParentControllerTest]
+20:22:33.754 [main] DEBUG org.springframework.test.annotation.ProfileValueU=
+tils - Retrieved ProfileValueSource type [class org.springframework.test.an=
+notation.SystemProfileValueSource] for class [com.fsd.backend.Controller.Pa=
+rentControllerTest]
+20:22:33.754 [main] DEBUG org.springframework.test.annotation.ProfileValueU=
+tils - Retrieved @ProfileValueSourceConfiguration [null] for test class [co=
+m.fsd.backend.Controller.ParentControllerTest]
+20:22:33.754 [main] DEBUG org.springframework.test.annotation.ProfileValueU=
+tils - Retrieved ProfileValueSource type [class org.springframework.test.an=
+notation.SystemProfileValueSource] for class [com.fsd.backend.Controller.Pa=
+rentControllerTest]
+20:22:33.764 [main] DEBUG org.springframework.test.context.support.Abstract=
+DirtiesContextTestExecutionListener - Before test class: context [DefaultTe=
+stContext@6f1c3f18 testClass =3D ParentControllerTest, testInstance =3D [nu=
+ll], testMethod =3D [null], testException =3D [null], mergedContextConfigur=
+ation =3D [WebMergedContextConfiguration@4c531172 testClass =3D ParentContr=
+ollerTest, locations =3D '{}', classes =3D '{class com.fsd.backend.BackendA=
+pplication}', contextInitializerClasses =3D '[]', activeProfiles =3D '{}', =
+propertySourceLocations =3D '{}', propertySourceProperties =3D '{org.spring=
+framework.boot.test.autoconfigure.web.servlet.WebMvcTestContextBootstrapper=
+=3Dtrue}', contextCustomizers =3D set[[ImportsContextCustomizer@489bc8fd ke=
+y =3D [org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration,=
+ org.springframework.boot.autoconfigure.context.MessageSourceAutoConfigurat=
+ion, org.springframework.boot.autoconfigure.data.web.SpringDataWebAutoConfi=
+guration, org.springframework.boot.autoconfigure.freemarker.FreeMarkerAutoC=
+onfiguration, org.springframework.boot.autoconfigure.groovy.template.Groovy=
+TemplateAutoConfiguration, org.springframework.boot.autoconfigure.gson.Gson=
+AutoConfiguration, org.springframework.boot.autoconfigure.hateoas.Hypermedi=
+aAutoConfiguration, org.springframework.boot.autoconfigure.http.HttpMessage=
+ConvertersAutoConfiguration, org.springframework.boot.autoconfigure.jackson=
+.JacksonAutoConfiguration, org.springframework.boot.autoconfigure.jsonb.Jso=
+nbAutoConfiguration, org.springframework.boot.autoconfigure.mustache.Mustac=
+heAutoConfiguration, org.springframework.boot.autoconfigure.task.TaskExecut=
+ionAutoConfiguration, org.springframework.boot.autoconfigure.thymeleaf.Thym=
+eleafAutoConfiguration, org.springframework.boot.autoconfigure.validation.V=
+alidationAutoConfiguration, org.springframework.boot.autoconfigure.web.serv=
+let.error.ErrorMvcAutoConfiguration, org.springframework.boot.autoconfigure=
+.web.servlet.WebMvcAutoConfiguration, org.springframework.boot.test.autocon=
+figure.web.servlet.MockMvcAutoConfiguration, org.springframework.boot.test.=
+autoconfigure.web.servlet.MockMvcSecurityAutoConfiguration, org.springframe=
+work.boot.test.autoconfigure.web.servlet.MockMvcWebClientAutoConfiguration,=
+ org.springframework.boot.test.autoconfigure.web.servlet.MockMvcWebDriverAu=
+toConfiguration]], org.springframework.boot.test.context.filter.ExcludeFilt=
+erContextCustomizer@38fc5554, org.springframework.boot.test.json.DuplicateJ=
+sonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@43b4=
+0233, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@a=
+46bec1f, org.springframework.boot.test.autoconfigure.OverrideAutoConfigurat=
+ionContextCustomizerFactory$DisableAutoConfigurationContextCustomizer@16e7b=
+402, org.springframework.boot.test.autoconfigure.filter.TypeExcludeFiltersC=
+ontextCustomizer@7b701528, org.springframework.boot.test.autoconfigure.prop=
+erties.PropertyMappingContextCustomizer@9d8202e9, org.springframework.boot.=
+test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer=
+@767a014e], resourceBasePath =3D '', contextLoader =3D 'org.springframework=
+.boot.test.context.SpringBootContextLoader', parent =3D [null]], attributes=
+ =3D map[[empty]]], class annotated with @DirtiesContext [false] with mode =
+[null].
+20:22:33.769 [main] DEBUG org.springframework.test.annotation.ProfileValueU=
+tils - Retrieved @ProfileValueSourceConfiguration [null] for test class [co=
+m.fsd.backend.Controller.ParentControllerTest]
+20:22:33.769 [main] DEBUG org.springframework.test.annotation.ProfileValueU=
+tils - Retrieved ProfileValueSource type [class org.springframework.test.an=
+notation.SystemProfileValueSource] for class [com.fsd.backend.Controller.Pa=
+rentControllerTest]
+20:22:34.229 [main] DEBUG org.springframework.test.context.support.TestProp=
+ertySourceUtils - Adding inlined properties to environment: {spring.jmx.ena=
+bled=3Dfalse, org.springframework.boot.test.autoconfigure.web.servlet.WebMv=
+cTestContextBootstrapper=3Dtrue, server.port=3D-1}
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =3D=3D=3D=3D=3D=3D=3D=3D=3D|_|=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D|_=
+__/=3D/_/_/_/
+ :: Spring Boot ::        (v2.1.4.RELEASE)
+
+2019-06-20 20:22:37.232  INFO 41052 --- [           main] c.f.b.Controller.=
+ParentControllerTest    : Starting ParentControllerTest on Javafs with PID =
+41052 (started by Admin in C:\Users\Admin\.jenkins\workspace\aaa\backend)
+2019-06-20 20:22:37.246  INFO 41052 --- [           main] c.f.b.Controller.=
+ParentControllerTest    : No active profile set, falling back to default pr=
+ofiles: default
+2019-06-20 20:22:42.661  INFO 41052 --- [           main] o.s.s.concurrent.=
+ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExec=
+utor'
+2019-06-20 20:22:43.262  INFO 41052 --- [           main] o.s.b.t.m.w.Sprin=
+gBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2019-06-20 20:22:43.262  INFO 41052 --- [           main] o.s.t.web.servlet=
+.TestDispatcherServlet  : Initializing Servlet ''
+2019-06-20 20:22:43.293  INFO 41052 --- [           main] o.s.t.web.servlet=
+.TestDispatcherServlet  : Completed initialization in 31 ms
+2019-06-20 20:22:43.376  INFO 41052 --- [           main] c.f.b.Controller.=
+ParentControllerTest    : Started ParentControllerTest in 9.115 seconds (JV=
+M running for 12.981)
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 11.9=
+98 s - in com.fsd.backend.Controller.ParentControllerTest
+[INFO] Running com.fsd.backend.Controller.ProjectControllerTest
+2019-06-20 20:22:44.108  INFO 41052 --- [           main] .b.t.a.w.s.WebMvc=
+TestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarc=
+hy found for test class [com.fsd.backend.Controller.ProjectControllerTest],=
+ using SpringBootContextLoader
+2019-06-20 20:22:44.109  INFO 41052 --- [           main] o.s.t.c.support.A=
+bstractContextLoader    : Could not detect default resource locations for t=
+est class [com.fsd.backend.Controller.ProjectControllerTest]: no resource f=
+ound for suffixes {-context.xml, Context.groovy}.
+2019-06-20 20:22:44.110  INFO 41052 --- [           main] t.c.s.AnnotationC=
+onfigContextLoaderUtils : Could not detect default configuration classes fo=
+r test class [com.fsd.backend.Controller.ProjectControllerTest]: ProjectCon=
+trollerTest does not declare any static, non-private, non-final, nested cla=
+sses annotated with @Configuration.
+2019-06-20 20:22:44.136  INFO 41052 --- [           main] .b.t.c.SpringBoot=
+TestContextBootstrapper : Found @SpringBootConfiguration com.fsd.backend.Ba=
+ckendApplication for test class com.fsd.backend.Controller.ProjectControlle=
+rTest
+2019-06-20 20:22:44.140  INFO 41052 --- [           main] .b.t.a.w.s.WebMvc=
+TestContextBootstrapper : Loaded default TestExecutionListener class names =
+from location [META-INF/spring.factories]: [org.springframework.boot.test.m=
+ock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.moc=
+k.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.au=
+toconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boo=
+t.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionList=
+ener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintO=
+nlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfig=
+ure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.co=
+ntext.web.ServletTestExecutionListener, org.springframework.test.context.su=
+pport.DirtiesContextBeforeModesTestExecutionListener, org.springframework.t=
+est.context.support.DependencyInjectionTestExecutionListener, org.springfra=
+mework.test.context.support.DirtiesContextTestExecutionListener, org.spring=
+framework.test.context.transaction.TransactionalTestExecutionListener, org.=
+springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2019-06-20 20:22:44.143  INFO 41052 --- [           main] .b.t.a.w.s.WebMvc=
+TestContextBootstrapper : Using TestExecutionListeners: [org.springframewor=
+k.test.context.web.ServletTestExecutionListener@c2e0be2, org.springframewor=
+k.test.context.support.DirtiesContextBeforeModesTestExecutionListener@103c7=
+07c, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListene=
+r@2d4236ff, org.springframework.boot.test.autoconfigure.SpringBootDependenc=
+yInjectionTestExecutionListener@62f141c2, org.springframework.test.context.=
+support.DirtiesContextTestExecutionListener@1e7c2765, org.springframework.t=
+est.context.transaction.TransactionalTestExecutionListener@6db01b46, org.sp=
+ringframework.test.context.jdbc.SqlScriptsTestExecutionListener@51793dc1, o=
+rg.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@3=
+96e897d, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestE=
+xecutionListener@4656c63a, org.springframework.boot.test.autoconfigure.web.=
+client.MockRestServiceServerResetTestExecutionListener@2b518f9d, org.spring=
+framework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTest=
+ExecutionListener@33de2803, org.springframework.boot.test.autoconfigure.web=
+.servlet.WebDriverTestExecutionListener@7eb66a64]
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =3D=3D=3D=3D=3D=3D=3D=3D=3D|_|=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D|_=
+__/=3D/_/_/_/
+ :: Spring Boot ::        (v2.1.4.RELEASE)
+
+2019-06-20 20:22:44.202  INFO 41052 --- [           main] c.f.b.Controller.=
+ProjectControllerTest   : Starting ProjectControllerTest on Javafs with PID=
+ 41052 (started by Admin in C:\Users\Admin\.jenkins\workspace\aaa\backend)
+2019-06-20 20:22:44.205  INFO 41052 --- [           main] c.f.b.Controller.=
+ProjectControllerTest   : No active profile set, falling back to default pr=
+ofiles: default
+2019-06-20 20:22:45.340  INFO 41052 --- [           main] o.s.s.concurrent.=
+ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExec=
+utor'
+2019-06-20 20:22:46.945  INFO 41052 --- [           main] o.s.b.t.m.w.Sprin=
+gBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2019-06-20 20:22:46.946  INFO 41052 --- [           main] o.s.t.web.servlet=
+.TestDispatcherServlet  : Initializing Servlet ''
+2019-06-20 20:22:46.958  INFO 41052 --- [           main] o.s.t.web.servlet=
+.TestDispatcherServlet  : Completed initialization in 12 ms
+2019-06-20 20:22:46.991  INFO 41052 --- [           main] c.f.b.Controller.=
+ProjectControllerTest   : Started ProjectControllerTest in 2.841 seconds (J=
+VM running for 16.595)
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.42=
+7 s - in com.fsd.backend.Controller.ProjectControllerTest
+[INFO] Running com.fsd.backend.Controller.TaskControllerTest
+2019-06-20 20:22:47.637  INFO 41052 --- [           main] .b.t.a.w.s.WebMvc=
+TestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarc=
+hy found for test class [com.fsd.backend.Controller.TaskControllerTest], us=
+ing SpringBootContextLoader
+2019-06-20 20:22:47.640  INFO 41052 --- [           main] o.s.t.c.support.A=
+bstractContextLoader    : Could not detect default resource locations for t=
+est class [com.fsd.backend.Controller.TaskControllerTest]: no resource foun=
+d for suffixes {-context.xml, Context.groovy}.
+2019-06-20 20:22:47.657  INFO 41052 --- [           main] t.c.s.AnnotationC=
+onfigContextLoaderUtils : Could not detect default configuration classes fo=
+r test class [com.fsd.backend.Controller.TaskControllerTest]: TaskControlle=
+rTest does not declare any static, non-private, non-final, nested classes a=
+nnotated with @Configuration.
+2019-06-20 20:22:47.667  INFO 41052 --- [           main] .b.t.c.SpringBoot=
+TestContextBootstrapper : Found @SpringBootConfiguration com.fsd.backend.Ba=
+ckendApplication for test class com.fsd.backend.Controller.TaskControllerTe=
+st
+2019-06-20 20:22:47.668  INFO 41052 --- [           main] .b.t.a.w.s.WebMvc=
+TestContextBootstrapper : Loaded default TestExecutionListener class names =
+from location [META-INF/spring.factories]: [org.springframework.boot.test.m=
+ock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.moc=
+k.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.au=
+toconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boo=
+t.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionList=
+ener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintO=
+nlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfig=
+ure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.co=
+ntext.web.ServletTestExecutionListener, org.springframework.test.context.su=
+pport.DirtiesContextBeforeModesTestExecutionListener, org.springframework.t=
+est.context.support.DependencyInjectionTestExecutionListener, org.springfra=
+mework.test.context.support.DirtiesContextTestExecutionListener, org.spring=
+framework.test.context.transaction.TransactionalTestExecutionListener, org.=
+springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2019-06-20 20:22:47.669  INFO 41052 --- [           main] .b.t.a.w.s.WebMvc=
+TestContextBootstrapper : Using TestExecutionListeners: [org.springframewor=
+k.test.context.web.ServletTestExecutionListener@7c26f301, org.springframewo=
+rk.test.context.support.DirtiesContextBeforeModesTestExecutionListener@3c7d=
+a546, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListen=
+er@7fdfa8c2, org.springframework.boot.test.autoconfigure.SpringBootDependen=
+cyInjectionTestExecutionListener@21c1fb2e, org.springframework.test.context=
+.support.DirtiesContextTestExecutionListener@6a34aaec, org.springframework.=
+test.context.transaction.TransactionalTestExecutionListener@3bb27579, org.s=
+pringframework.test.context.jdbc.SqlScriptsTestExecutionListener@39a95375, =
+org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@=
+171fd7e5, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTest=
+ExecutionListener@58337c20, org.springframework.boot.test.autoconfigure.web=
+.client.MockRestServiceServerResetTestExecutionListener@7082d3e2, org.sprin=
+gframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTes=
+tExecutionListener@343047c, org.springframework.boot.test.autoconfigure.web=
+.servlet.WebDriverTestExecutionListener@6a0a5b0e]
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =3D=3D=3D=3D=3D=3D=3D=3D=3D|_|=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D|_=
+__/=3D/_/_/_/
+ :: Spring Boot ::        (v2.1.4.RELEASE)
+
+2019-06-20 20:22:47.717  INFO 41052 --- [           main] c.f.b.Controller.=
+TaskControllerTest      : Starting TaskControllerTest on Javafs with PID 41=
+052 (started by Admin in C:\Users\Admin\.jenkins\workspace\aaa\backend)
+2019-06-20 20:22:47.719  INFO 41052 --- [           main] c.f.b.Controller.=
+TaskControllerTest      : No active profile set, falling back to default pr=
+ofiles: default
+2019-06-20 20:22:48.671  INFO 41052 --- [           main] o.s.s.concurrent.=
+ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExec=
+utor'
+2019-06-20 20:22:48.871  INFO 41052 --- [           main] o.s.b.t.m.w.Sprin=
+gBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2019-06-20 20:22:48.871  INFO 41052 --- [           main] o.s.t.web.servlet=
+.TestDispatcherServlet  : Initializing Servlet ''
+2019-06-20 20:22:48.885  INFO 41052 --- [           main] o.s.t.web.servlet=
+.TestDispatcherServlet  : Completed initialization in 14 ms
+2019-06-20 20:22:48.914  INFO 41052 --- [           main] c.f.b.Controller.=
+TaskControllerTest      : Started TaskControllerTest in 1.24 seconds (JVM r=
+unning for 18.519)
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.50=
+6 s - in com.fsd.backend.Controller.TaskControllerTest
+[INFO] Running com.fsd.backend.Controller.UserControllerTest
+2019-06-20 20:22:49.053  INFO 41052 --- [           main] .b.t.a.w.s.WebMvc=
+TestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarc=
+hy found for test class [com.fsd.backend.Controller.UserControllerTest], us=
+ing SpringBootContextLoader
+2019-06-20 20:22:49.054  INFO 41052 --- [           main] o.s.t.c.support.A=
+bstractContextLoader    : Could not detect default resource locations for t=
+est class [com.fsd.backend.Controller.UserControllerTest]: no resource foun=
+d for suffixes {-context.xml, Context.groovy}.
+2019-06-20 20:22:49.055  INFO 41052 --- [           main] t.c.s.AnnotationC=
+onfigContextLoaderUtils : Could not detect default configuration classes fo=
+r test class [com.fsd.backend.Controller.UserControllerTest]: UserControlle=
+rTest does not declare any static, non-private, non-final, nested classes a=
+nnotated with @Configuration.
+2019-06-20 20:22:49.082  INFO 41052 --- [           main] .b.t.c.SpringBoot=
+TestContextBootstrapper : Found @SpringBootConfiguration com.fsd.backend.Ba=
+ckendApplication for test class com.fsd.backend.Controller.UserControllerTe=
+st
+2019-06-20 20:22:49.083  INFO 41052 --- [           main] .b.t.a.w.s.WebMvc=
+TestContextBootstrapper : Loaded default TestExecutionListener class names =
+from location [META-INF/spring.factories]: [org.springframework.boot.test.m=
+ock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.moc=
+k.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.au=
+toconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boo=
+t.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionList=
+ener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintO=
+nlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfig=
+ure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.co=
+ntext.web.ServletTestExecutionListener, org.springframework.test.context.su=
+pport.DirtiesContextBeforeModesTestExecutionListener, org.springframework.t=
+est.context.support.DependencyInjectionTestExecutionListener, org.springfra=
+mework.test.context.support.DirtiesContextTestExecutionListener, org.spring=
+framework.test.context.transaction.TransactionalTestExecutionListener, org.=
+springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2019-06-20 20:22:49.083  INFO 41052 --- [           main] .b.t.a.w.s.WebMvc=
+TestContextBootstrapper : Using TestExecutionListeners: [org.springframewor=
+k.test.context.web.ServletTestExecutionListener@5e51ac41, org.springframewo=
+rk.test.context.support.DirtiesContextBeforeModesTestExecutionListener@3a35=
+e669, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListen=
+er@6bbbfc05, org.springframework.boot.test.autoconfigure.SpringBootDependen=
+cyInjectionTestExecutionListener@3b93b86b, org.springframework.test.context=
+.support.DirtiesContextTestExecutionListener@687328fc, org.springframework.=
+test.context.transaction.TransactionalTestExecutionListener@7de09d35, org.s=
+pringframework.test.context.jdbc.SqlScriptsTestExecutionListener@490f1d58, =
+org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@=
+6ff9b4f2, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTest=
+ExecutionListener@1ebc4539, org.springframework.boot.test.autoconfigure.web=
+.client.MockRestServiceServerResetTestExecutionListener@67cc7aee, org.sprin=
+gframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTes=
+tExecutionListener@56984e92, org.springframework.boot.test.autoconfigure.we=
+b.servlet.WebDriverTestExecutionListener@74642e97]
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =3D=3D=3D=3D=3D=3D=3D=3D=3D|_|=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D|_=
+__/=3D/_/_/_/
+ :: Spring Boot ::        (v2.1.4.RELEASE)
+
+2019-06-20 20:22:49.116  INFO 41052 --- [           main] c.f.b.Controller.=
+UserControllerTest      : Starting UserControllerTest on Javafs with PID 41=
+052 (started by Admin in C:\Users\Admin\.jenkins\workspace\aaa\backend)
+2019-06-20 20:22:49.118  INFO 41052 --- [           main] c.f.b.Controller.=
+UserControllerTest      : No active profile set, falling back to default pr=
+ofiles: default
+2019-06-20 20:22:49.834  INFO 41052 --- [           main] o.s.s.concurrent.=
+ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExec=
+utor'
+2019-06-20 20:22:50.041  INFO 41052 --- [           main] o.s.b.t.m.w.Sprin=
+gBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2019-06-20 20:22:50.041  INFO 41052 --- [           main] o.s.t.web.servlet=
+.TestDispatcherServlet  : Initializing Servlet ''
+2019-06-20 20:22:50.053  INFO 41052 --- [           main] o.s.t.web.servlet=
+.TestDispatcherServlet  : Completed initialization in 12 ms
+2019-06-20 20:22:50.085  INFO 41052 --- [           main] c.f.b.Controller.=
+UserControllerTest      : Started UserControllerTest in 0.998 seconds (JVM =
+running for 19.691)
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.26=
+9 s - in com.fsd.backend.Controller.UserControllerTest
+[INFO] Running com.fsd.backend.Repository.ParentDaoTest
+2019-06-20 20:22:50.334  INFO 41052 --- [           main] b.t.a.o.j.DataJpa=
+TestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarc=
+hy found for test class [com.fsd.backend.Repository.ParentDaoTest], using S=
+pringBootContextLoader
+2019-06-20 20:22:50.341  INFO 41052 --- [           main] o.s.t.c.support.A=
+bstractContextLoader    : Could not detect default resource locations for t=
+est class [com.fsd.backend.Repository.ParentDaoTest]: no resource found for=
+ suffixes {-context.xml, Context.groovy}.
+2019-06-20 20:22:50.345  INFO 41052 --- [           main] t.c.s.AnnotationC=
+onfigContextLoaderUtils : Could not detect default configuration classes fo=
+r test class [com.fsd.backend.Repository.ParentDaoTest]: ParentDaoTest does=
+ not declare any static, non-private, non-final, nested classes annotated w=
+ith @Configuration.
+2019-06-20 20:22:50.379  INFO 41052 --- [           main] .b.t.c.SpringBoot=
+TestContextBootstrapper : Found @SpringBootConfiguration com.fsd.backend.Ba=
+ckendApplication for test class com.fsd.backend.Repository.ParentDaoTest
+2019-06-20 20:22:50.379  INFO 41052 --- [           main] b.t.a.o.j.DataJpa=
+TestContextBootstrapper : Loaded default TestExecutionListener class names =
+from location [META-INF/spring.factories]: [org.springframework.boot.test.m=
+ock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.moc=
+k.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.au=
+toconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boo=
+t.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionList=
+ener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintO=
+nlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfig=
+ure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.co=
+ntext.web.ServletTestExecutionListener, org.springframework.test.context.su=
+pport.DirtiesContextBeforeModesTestExecutionListener, org.springframework.t=
+est.context.support.DependencyInjectionTestExecutionListener, org.springfra=
+mework.test.context.support.DirtiesContextTestExecutionListener, org.spring=
+framework.test.context.transaction.TransactionalTestExecutionListener, org.=
+springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2019-06-20 20:22:50.380  INFO 41052 --- [           main] b.t.a.o.j.DataJpa=
+TestContextBootstrapper : Using TestExecutionListeners: [org.springframewor=
+k.test.context.web.ServletTestExecutionListener@1fd5eb93, org.springframewo=
+rk.test.context.support.DirtiesContextBeforeModesTestExecutionListener@1565=
+afbf, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListen=
+er@581d8e8c, org.springframework.boot.test.autoconfigure.SpringBootDependen=
+cyInjectionTestExecutionListener@7d300ed9, org.springframework.test.context=
+.support.DirtiesContextTestExecutionListener@4d09eb9f, org.springframework.=
+test.context.transaction.TransactionalTestExecutionListener@75a9add6, org.s=
+pringframework.test.context.jdbc.SqlScriptsTestExecutionListener@41f43401, =
+org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@=
+3ccfac20, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTest=
+ExecutionListener@3e98fd35, org.springframework.boot.test.autoconfigure.web=
+.client.MockRestServiceServerResetTestExecutionListener@6e7302d, org.spring=
+framework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTest=
+ExecutionListener@66d358cc, org.springframework.boot.test.autoconfigure.web=
+.servlet.WebDriverTestExecutionListener@27bc569a]
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =3D=3D=3D=3D=3D=3D=3D=3D=3D|_|=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D|_=
+__/=3D/_/_/_/
+ :: Spring Boot ::        (v2.1.4.RELEASE)
+
+2019-06-20 20:22:50.539  INFO 41052 --- [           main] c.fsd.backend.Rep=
+ository.ParentDaoTest   : Starting ParentDaoTest on Javafs with PID 41052 (=
+started by Admin in C:\Users\Admin\.jenkins\workspace\aaa\backend)
+2019-06-20 20:22:50.540  INFO 41052 --- [           main] c.fsd.backend.Rep=
+ository.ParentDaoTest   : No active profile set, falling back to default pr=
+ofiles: default
+2019-06-20 20:22:50.898  INFO 41052 --- [           main] .s.d.r.c.Reposito=
+ryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT=
+ mode.
+2019-06-20 20:22:51.131  INFO 41052 --- [           main] .s.d.r.c.Reposito=
+ryConfigurationDelegate : Finished Spring Data repository scanning in 210ms=
+. Found 4 repository interfaces.
+2019-06-20 20:22:51.202  INFO 41052 --- [           main] beddedDataSourceB=
+eanFactoryPostProcessor : Replacing 'dataSource' DataSource bean with embed=
+ded version
+2019-06-20 20:22:51.748  INFO 41052 --- [           main] o.s.j.d.e.Embedde=
+dDatabaseFactory        : Starting embedded database: url=3D'jdbc:h2:mem:c1=
+10d9fa-bd5e-474e-b8e1-278960f08616;DB_CLOSE_DELAY=3D-1;DB_CLOSE_ON_EXIT=3Df=
+alse', username=3D'sa'
+2019-06-20 20:22:52.726  INFO 41052 --- [           main] o.hibernate.jpa.i=
+nternal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+=09name: default
+=09...]
+2019-06-20 20:22:52.925  INFO 41052 --- [           main] org.hibernate.Ver=
+sion                    : HHH000412: Hibernate Core {5.3.9.Final}
+2019-06-20 20:22:52.933  INFO 41052 --- [           main] org.hibernate.cfg=
+.Environment            : HHH000206: hibernate.properties not found
+2019-06-20 20:22:53.066  INFO 41052 --- [           main] o.hibernate.annot=
+ations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4=
+.Final}
+2019-06-20 20:22:53.595  INFO 41052 --- [           main] org.hibernate.dia=
+lect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H=
+2Dialect
+Hibernate: drop table parent_task if exists
+Hibernate: drop table project if exists
+Hibernate: drop table project_id if exists
+Hibernate: drop table task if exists
+Hibernate: drop table task_id if exists
+Hibernate: drop table user if exists
+Hibernate: drop sequence if exists hibernate_sequence
+Hibernate: create sequence hibernate_sequence start with 1 increment by 1
+Hibernate: create table parent_task (parent_task_id bigint not null, parent=
+_task varchar(255) not null, primary key (parent_task_id))
+Hibernate: create table project (project_id bigint not null, end_date date,=
+ priority integer not null, project varchar(255), start_date date, user_use=
+r_id bigint, primary key (project_id))
+Hibernate: create table project_id (user_id bigint not null, project_id big=
+int not null)
+Hibernate: create table task (task_id bigint not null, end_date date not nu=
+ll, priority integer not null, start_date date not null, status varchar(255=
+) not null, task varchar(255) not null, parent_task_parent_task_id bigint n=
+ot null, project_project_id bigint not null, user_user_id bigint not null, =
+primary key (task_id))
+Hibernate: create table task_id (user_id bigint not null, task_id bigint no=
+t null, project_id bigint not null)
+Hibernate: create table user (user_id bigint not null, employee_id varchar(=
+255) not null, first_name varchar(255) not null, last_name varchar(255) not=
+ null, primary key (user_id))
+Hibernate: alter table project_id add constraint UK_rvuvfy1y5dfti02hryk0vpa=
+ni unique (project_id)
+Hibernate: alter table task add constraint UK_mnjbilmcb2rvo6ucahakeelsr uni=
+que (parent_task_parent_task_id)
+Hibernate: alter table task_id add constraint UK_46mf8aoxbfjopc38i9mjd50oj =
+unique (task_id)
+Hibernate: alter table project add constraint FKid2j2pfrqbmhl31xkvkeb57o3 f=
+oreign key (user_user_id) references user
+Hibernate: alter table project_id add constraint FKd7i2v2hvk387bbnq3hn66rpa=
+p foreign key (project_id) references project
+Hibernate: alter table project_id add constraint FKqipnq0dp3t63j7wi821ifga2=
+o foreign key (user_id) references user
+Hibernate: alter table task add constraint FKpolyaiqftuc6y50acsrsom2qg fore=
+ign key (parent_task_parent_task_id) references parent_task
+Hibernate: alter table task add constraint FKeerx3epqnbyihu6v2rx89cy13 fore=
+ign key (project_project_id) references project
+Hibernate: alter table task add constraint FK4ordojk2hmfawex6xkaqhynvj fore=
+ign key (user_user_id) references user
+Hibernate: alter table task_id add constraint FKr232mau1tbh0qoj33q5t9viqa f=
+oreign key (task_id) references task
+Hibernate: alter table task_id add constraint FK56jrrmcvmsc1hrwxjasd344fb f=
+oreign key (user_id) references user
+Hibernate: alter table task_id add constraint FKc8byk5y75v30pdxkqd9e94uuv f=
+oreign key (project_id) references project
+2019-06-20 20:22:55.692  INFO 41052 --- [           main] o.h.t.schema.inte=
+rnal.SchemaCreatorImpl  : HHH000476: Executing import script 'org.hibernate=
+.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@5eed1a62'
+2019-06-20 20:22:55.701  INFO 41052 --- [           main] j.LocalContainerE=
+ntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persiste=
+nce unit 'default'
+2019-06-20 20:22:56.703  INFO 41052 --- [           main] c.fsd.backend.Rep=
+ository.ParentDaoTest   : Started ParentDaoTest in 6.319 seconds (JVM runni=
+ng for 26.307)
+2019-06-20 20:22:56.733  INFO 41052 --- [           main] o.s.t.c.transacti=
+on.TransactionContext   : Began transaction (1) for test context [DefaultTe=
+stContext@57afc4ec testClass =3D ParentDaoTest, testInstance =3D com.fsd.ba=
+ckend.Repository.ParentDaoTest@463b74b6, testMethod =3D testAddParent@Paren=
+tDaoTest, testException =3D [null], mergedContextConfiguration =3D [MergedC=
+ontextConfiguration@59f1cd1e testClass =3D ParentDaoTest, locations =3D '{}=
+', classes =3D '{class com.fsd.backend.BackendApplication}', contextInitial=
+izerClasses =3D '[]', activeProfiles =3D '{}', propertySourceLocations =3D =
+'{}', propertySourceProperties =3D '{org.springframework.boot.test.autoconf=
+igure.orm.jpa.DataJpaTestContextBootstrapper=3Dtrue}', contextCustomizers =
+=3D set[[ImportsContextCustomizer@410370be key =3D [@org.springframework.bo=
+ot.test.autoconfigure.orm.jpa.AutoConfigureDataJpa(), @org.springframework.=
+boot.test.autoconfigure.orm.jpa.AutoConfigureTestEntityManager(), @org.spri=
+ngframework.test.context.BootstrapWith(value=3Dclass org.springframework.bo=
+ot.test.autoconfigure.orm.jpa.DataJpaTestContextBootstrapper), @org.springf=
+ramework.boot.test.autoconfigure.filter.TypeExcludeFilters(value=3D[class o=
+rg.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTypeExcludeFilter=
+]), @org.springframework.context.annotation.Import(value=3D[class org.sprin=
+gframework.boot.autoconfigure.ImportAutoConfigurationImportSelector]), @org=
+.springframework.transaction.annotation.Transactional(propagation=3DREQUIRE=
+D, rollbackForClassName=3D[], readOnly=3Dfalse, isolation=3DDEFAULT, transa=
+ctionManager=3D, noRollbackFor=3D[], noRollbackForClassName=3D[], value=3D,=
+ timeout=3D-1, rollbackFor=3D[]), @org.springframework.transaction.annotati=
+on.EnableTransactionManagement(mode=3DPROXY, order=3D2147483647, proxyTarge=
+tClass=3Dfalse), @org.springframework.boot.test.autoconfigure.orm.jpa.DataJ=
+paTest(showSql=3Dtrue, excludeAutoConfiguration=3D[], excludeFilters=3D[], =
+useDefaultFilters=3Dtrue, includeFilters=3D[], properties=3D[]), @org.sprin=
+gframework.boot.test.autoconfigure.core.AutoConfigureCache(cacheProvider=3D=
+NONE), @org.springframework.boot.autoconfigure.ImportAutoConfiguration(valu=
+e=3D[], exclude=3D[], classes=3D[]), @org.springframework.context.annotatio=
+n.Import(value=3D[class org.springframework.transaction.annotation.Transact=
+ionManagementConfigurationSelector]), @org.junit.runner.RunWith(value=3Dcla=
+ss org.springframework.test.context.junit4.SpringRunner), @org.springframew=
+ork.boot.test.autoconfigure.OverrideAutoConfiguration(enabled=3Dfalse), @or=
+g.springframework.boot.test.autoconfigure.properties.PropertyMapping(value=
+=3Dspring.test.database, skip=3DNO), @org.springframework.boot.test.autocon=
+figure.jdbc.AutoConfigureTestDatabase(replace=3DANY, connection=3DNONE)]], =
+org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer=
+@38fc5554, org.springframework.boot.test.json.DuplicateJsonObjectContextCus=
+tomizerFactory$DuplicateJsonObjectContextCustomizer@43b40233, org.springfra=
+mework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframewo=
+rk.boot.test.autoconfigure.OverrideAutoConfigurationContextCustomizerFactor=
+y$DisableAutoConfigurationContextCustomizer@16e7b402, org.springframework.b=
+oot.test.autoconfigure.filter.TypeExcludeFiltersContextCustomizer@351584c0,=
+ org.springframework.boot.test.autoconfigure.properties.PropertyMappingCont=
+extCustomizer@2d07316e, org.springframework.boot.test.autoconfigure.web.ser=
+vlet.WebDriverContextCustomizerFactory$Customizer@767a014e], contextLoader =
+=3D 'org.springframework.boot.test.context.SpringBootContextLoader', parent=
+ =3D [null]], attributes =3D map[[empty]]]; transaction manager [org.spring=
+framework.orm.jpa.JpaTransactionManager@6a1da290]; rollback [false]
+Hibernate: select parenttask0_.parent_task_id as parent_t1_0_0_, parenttask=
+0_.parent_task as parent_t2_0_0_ from parent_task parenttask0_ where parent=
+task0_.parent_task_id=3D?
+Hibernate: call next value for hibernate_sequence
+Hibernate: insert into parent_task (parent_task, parent_task_id) values (?,=
+ ?)
+2019-06-20 20:22:56.920  INFO 41052 --- [           main] o.s.t.c.transacti=
+on.TransactionContext   : Committed transaction for test: [DefaultTestConte=
+xt@57afc4ec testClass =3D ParentDaoTest, testInstance =3D com.fsd.backend.R=
+epository.ParentDaoTest@463b74b6, testMethod =3D testAddParent@ParentDaoTes=
+t, testException =3D [null], mergedContextConfiguration =3D [MergedContextC=
+onfiguration@59f1cd1e testClass =3D ParentDaoTest, locations =3D '{}', clas=
+ses =3D '{class com.fsd.backend.BackendApplication}', contextInitializerCla=
+sses =3D '[]', activeProfiles =3D '{}', propertySourceLocations =3D '{}', p=
+ropertySourceProperties =3D '{org.springframework.boot.test.autoconfigure.o=
+rm.jpa.DataJpaTestContextBootstrapper=3Dtrue}', contextCustomizers =3D set[=
+[ImportsContextCustomizer@410370be key =3D [@org.springframework.boot.test.=
+autoconfigure.orm.jpa.AutoConfigureDataJpa(), @org.springframework.boot.tes=
+t.autoconfigure.orm.jpa.AutoConfigureTestEntityManager(), @org.springframew=
+ork.test.context.BootstrapWith(value=3Dclass org.springframework.boot.test.=
+autoconfigure.orm.jpa.DataJpaTestContextBootstrapper), @org.springframework=
+.boot.test.autoconfigure.filter.TypeExcludeFilters(value=3D[class org.sprin=
+gframework.boot.test.autoconfigure.orm.jpa.DataJpaTypeExcludeFilter]), @org=
+.springframework.context.annotation.Import(value=3D[class org.springframewo=
+rk.boot.autoconfigure.ImportAutoConfigurationImportSelector]), @org.springf=
+ramework.transaction.annotation.Transactional(propagation=3DREQUIRED, rollb=
+ackForClassName=3D[], readOnly=3Dfalse, isolation=3DDEFAULT, transactionMan=
+ager=3D, noRollbackFor=3D[], noRollbackForClassName=3D[], value=3D, timeout=
+=3D-1, rollbackFor=3D[]), @org.springframework.transaction.annotation.Enabl=
+eTransactionManagement(mode=3DPROXY, order=3D2147483647, proxyTargetClass=
+=3Dfalse), @org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest=
+(showSql=3Dtrue, excludeAutoConfiguration=3D[], excludeFilters=3D[], useDef=
+aultFilters=3Dtrue, includeFilters=3D[], properties=3D[]), @org.springframe=
+work.boot.test.autoconfigure.core.AutoConfigureCache(cacheProvider=3DNONE),=
+ @org.springframework.boot.autoconfigure.ImportAutoConfiguration(value=3D[]=
+, exclude=3D[], classes=3D[]), @org.springframework.context.annotation.Impo=
+rt(value=3D[class org.springframework.transaction.annotation.TransactionMan=
+agementConfigurationSelector]), @org.junit.runner.RunWith(value=3Dclass org=
+.springframework.test.context.junit4.SpringRunner), @org.springframework.bo=
+ot.test.autoconfigure.OverrideAutoConfiguration(enabled=3Dfalse), @org.spri=
+ngframework.boot.test.autoconfigure.properties.PropertyMapping(value=3Dspri=
+ng.test.database, skip=3DNO), @org.springframework.boot.test.autoconfigure.=
+jdbc.AutoConfigureTestDatabase(replace=3DANY, connection=3DNONE)]], org.spr=
+ingframework.boot.test.context.filter.ExcludeFilterContextCustomizer@38fc55=
+54, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizer=
+Factory$DuplicateJsonObjectContextCustomizer@43b40233, org.springframework.=
+boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot=
+.test.autoconfigure.OverrideAutoConfigurationContextCustomizerFactory$Disab=
+leAutoConfigurationContextCustomizer@16e7b402, org.springframework.boot.tes=
+t.autoconfigure.filter.TypeExcludeFiltersContextCustomizer@351584c0, org.sp=
+ringframework.boot.test.autoconfigure.properties.PropertyMappingContextCust=
+omizer@2d07316e, org.springframework.boot.test.autoconfigure.web.servlet.We=
+bDriverContextCustomizerFactory$Customizer@767a014e], contextLoader =3D 'or=
+g.springframework.boot.test.context.SpringBootContextLoader', parent =3D [n=
+ull]], attributes =3D map[[empty]]]
+2019-06-20 20:22:56.929  INFO 41052 --- [           main] o.s.t.c.transacti=
+on.TransactionContext   : Began transaction (1) for test context [DefaultTe=
+stContext@57afc4ec testClass =3D ParentDaoTest, testInstance =3D com.fsd.ba=
+ckend.Repository.ParentDaoTest@1a3598ab, testMethod =3D testGetParent@Paren=
+tDaoTest, testException =3D [null], mergedContextConfiguration =3D [MergedC=
+ontextConfiguration@59f1cd1e testClass =3D ParentDaoTest, locations =3D '{}=
+', classes =3D '{class com.fsd.backend.BackendApplication}', contextInitial=
+izerClasses =3D '[]', activeProfiles =3D '{}', propertySourceLocations =3D =
+'{}', propertySourceProperties =3D '{org.springframework.boot.test.autoconf=
+igure.orm.jpa.DataJpaTestContextBootstrapper=3Dtrue}', contextCustomizers =
+=3D set[[ImportsContextCustomizer@410370be key =3D [@org.springframework.bo=
+ot.test.autoconfigure.orm.jpa.AutoConfigureDataJpa(), @org.springframework.=
+boot.test.autoconfigure.orm.jpa.AutoConfigureTestEntityManager(), @org.spri=
+ngframework.test.context.BootstrapWith(value=3Dclass org.springframework.bo=
+ot.test.autoconfigure.orm.jpa.DataJpaTestContextBootstrapper), @org.springf=
+ramework.boot.test.autoconfigure.filter.TypeExcludeFilters(value=3D[class o=
+rg.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTypeExcludeFilter=
+]), @org.springframework.context.annotation.Import(value=3D[class org.sprin=
+gframework.boot.autoconfigure.ImportAutoConfigurationImportSelector]), @org=
+.springframework.transaction.annotation.Transactional(propagation=3DREQUIRE=
+D, rollbackForClassName=3D[], readOnly=3Dfalse, isolation=3DDEFAULT, transa=
+ctionManager=3D, noRollbackFor=3D[], noRollbackForClassName=3D[], value=3D,=
+ timeout=3D-1, rollbackFor=3D[]), @org.springframework.transaction.annotati=
+on.EnableTransactionManagement(mode=3DPROXY, order=3D2147483647, proxyTarge=
+tClass=3Dfalse), @org.springframework.boot.test.autoconfigure.orm.jpa.DataJ=
+paTest(showSql=3Dtrue, excludeAutoConfiguration=3D[], excludeFilters=3D[], =
+useDefaultFilters=3Dtrue, includeFilters=3D[], properties=3D[]), @org.sprin=
+gframework.boot.test.autoconfigure.core.AutoConfigureCache(cacheProvider=3D=
+NONE), @org.springframework.boot.autoconfigure.ImportAutoConfiguration(valu=
+e=3D[], exclude=3D[], classes=3D[]), @org.springframework.context.annotatio=
+n.Import(value=3D[class org.springframework.transaction.annotation.Transact=
+ionManagementConfigurationSelector]), @org.junit.runner.RunWith(value=3Dcla=
+ss org.springframework.test.context.junit4.SpringRunner), @org.springframew=
+ork.boot.test.autoconfigure.OverrideAutoConfiguration(enabled=3Dfalse), @or=
+g.springframework.boot.test.autoconfigure.properties.PropertyMapping(value=
+=3Dspring.test.database, skip=3DNO), @org.springframework.boot.test.autocon=
+figure.jdbc.AutoConfigureTestDatabase(replace=3DANY, connection=3DNONE)]], =
+org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer=
+@38fc5554, org.springframework.boot.test.json.DuplicateJsonObjectContextCus=
+tomizerFactory$DuplicateJsonObjectContextCustomizer@43b40233, org.springfra=
+mework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframewo=
+rk.boot.test.autoconfigure.OverrideAutoConfigurationContextCustomizerFactor=
+y$DisableAutoConfigurationContextCustomizer@16e7b402, org.springframework.b=
+oot.test.autoconfigure.filter.TypeExcludeFiltersContextCustomizer@351584c0,=
+ org.springframework.boot.test.autoconfigure.properties.PropertyMappingCont=
+extCustomizer@2d07316e, org.springframework.boot.test.autoconfigure.web.ser=
+vlet.WebDriverContextCustomizerFactory$Customizer@767a014e], contextLoader =
+=3D 'org.springframework.boot.test.context.SpringBootContextLoader', parent=
+ =3D [null]], attributes =3D map[[empty]]]; transaction manager [org.spring=
+framework.orm.jpa.JpaTransactionManager@6a1da290]; rollback [false]
+Hibernate: select parenttask0_.parent_task_id as parent_t1_0_0_, parenttask=
+0_.parent_task as parent_t2_0_0_ from parent_task parenttask0_ where parent=
+task0_.parent_task_id=3D?
+2019-06-20 20:22:57.065  INFO 41052 --- [           main] o.h.h.i.QueryTran=
+slatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+Hibernate: select parenttask0_.parent_task_id as parent_t1_0_, parenttask0_=
+.parent_task as parent_t2_0_ from parent_task parenttask0_
+2019-06-20 20:22:57.394  INFO 41052 --- [           main] o.s.t.c.transacti=
+on.TransactionContext   : Committed transaction for test: [DefaultTestConte=
+xt@57afc4ec testClass =3D ParentDaoTest, testInstance =3D com.fsd.backend.R=
+epository.ParentDaoTest@1a3598ab, testMethod =3D testGetParent@ParentDaoTes=
+t, testException =3D [null], mergedContextConfiguration =3D [MergedContextC=
+onfiguration@59f1cd1e testClass =3D ParentDaoTest, locations =3D '{}', clas=
+ses =3D '{class com.fsd.backend.BackendApplication}', contextInitializerCla=
+sses =3D '[]', activeProfiles =3D '{}', propertySourceLocations =3D '{}', p=
+ropertySourceProperties =3D '{org.springframework.boot.test.autoconfigure.o=
+rm.jpa.DataJpaTestContextBootstrapper=3Dtrue}', contextCustomizers =3D set[=
+[ImportsContextCustomizer@410370be key =3D [@org.springframework.boot.test.=
+autoconfigure.orm.jpa.AutoConfigureDataJpa(), @org.springframework.boot.tes=
+t.autoconfigure.orm.jpa.AutoConfigureTestEntityManager(), @org.springframew=
+ork.test.context.BootstrapWith(value=3Dclass org.springframework.boot.test.=
+autoconfigure.orm.jpa.DataJpaTestContextBootstrapper), @org.springframework=
+.boot.test.autoconfigure.filter.TypeExcludeFilters(value=3D[class org.sprin=
+gframework.boot.test.autoconfigure.orm.jpa.DataJpaTypeExcludeFilter]), @org=
+.springframework.context.annotation.Import(value=3D[class org.springframewo=
+rk.boot.autoconfigure.ImportAutoConfigurationImportSelector]), @org.springf=
+ramework.transaction.annotation.Transactional(propagation=3DREQUIRED, rollb=
+ackForClassName=3D[], readOnly=3Dfalse, isolation=3DDEFAULT, transactionMan=
+ager=3D, noRollbackFor=3D[], noRollbackForClassName=3D[], value=3D, timeout=
+=3D-1, rollbackFor=3D[]), @org.springframework.transaction.annotation.Enabl=
+eTransactionManagement(mode=3DPROXY, order=3D2147483647, proxyTargetClass=
+=3Dfalse), @org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest=
+(showSql=3Dtrue, excludeAutoConfiguration=3D[], excludeFilters=3D[], useDef=
+aultFilters=3Dtrue, includeFilters=3D[], properties=3D[]), @org.springframe=
+work.boot.test.autoconfigure.core.AutoConfigureCache(cacheProvider=3DNONE),=
+ @org.springframework.boot.autoconfigure.ImportAutoConfiguration(value=3D[]=
+, exclude=3D[], classes=3D[]), @org.springframework.context.annotation.Impo=
+rt(value=3D[class org.springframework.transaction.annotation.TransactionMan=
+agementConfigurationSelector]), @org.junit.runner.RunWith(value=3Dclass org=
+.springframework.test.context.junit4.SpringRunner), @org.springframework.bo=
+ot.test.autoconfigure.OverrideAutoConfiguration(enabled=3Dfalse), @org.spri=
+ngframework.boot.test.autoconfigure.properties.PropertyMapping(value=3Dspri=
+ng.test.database, skip=3DNO), @org.springframework.boot.test.autoconfigure.=
+jdbc.AutoConfigureTestDatabase(replace=3DANY, connection=3DNONE)]], org.spr=
+ingframework.boot.test.context.filter.ExcludeFilterContextCustomizer@38fc55=
+54, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizer=
+Factory$DuplicateJsonObjectContextCustomizer@43b40233, org.springframework.=
+boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot=
+.test.autoconfigure.OverrideAutoConfigurationContextCustomizerFactory$Disab=
+leAutoConfigurationContextCustomizer@16e7b402, org.springframework.boot.tes=
+t.autoconfigure.filter.TypeExcludeFiltersContextCustomizer@351584c0, org.sp=
+ringframework.boot.test.autoconfigure.properties.PropertyMappingContextCust=
+omizer@2d07316e, org.springframework.boot.test.autoconfigure.web.servlet.We=
+bDriverContextCustomizerFactory$Customizer@767a014e], contextLoader =3D 'or=
+g.springframework.boot.test.context.SpringBootContextLoader', parent =3D [n=
+ull]], attributes =3D map[[empty]]]
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 7.07=
+5 s - in com.fsd.backend.Repository.ParentDaoTest
+[INFO] Running com.fsd.backend.Repository.ProjectDaoTest
+2019-06-20 20:22:57.410  INFO 41052 --- [           main] b.t.a.o.j.DataJpa=
+TestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarc=
+hy found for test class [com.fsd.backend.Repository.ProjectDaoTest], using =
+SpringBootContextLoader
+2019-06-20 20:22:57.414  INFO 41052 --- [           main] o.s.t.c.support.A=
+bstractContextLoader    : Could not detect default resource locations for t=
+est class [com.fsd.backend.Repository.ProjectDaoTest]: no resource found fo=
+r suffixes {-context.xml, Context.groovy}.
+2019-06-20 20:22:57.414  INFO 41052 --- [           main] t.c.s.AnnotationC=
+onfigContextLoaderUtils : Could not detect default configuration classes fo=
+r test class [com.fsd.backend.Repository.ProjectDaoTest]: ProjectDaoTest do=
+es not declare any static, non-private, non-final, nested classes annotated=
+ with @Configuration.
+2019-06-20 20:22:57.434  INFO 41052 --- [           main] .b.t.c.SpringBoot=
+TestContextBootstrapper : Found @SpringBootConfiguration com.fsd.backend.Ba=
+ckendApplication for test class com.fsd.backend.Repository.ProjectDaoTest
+2019-06-20 20:22:57.436  INFO 41052 --- [           main] b.t.a.o.j.DataJpa=
+TestContextBootstrapper : Loaded default TestExecutionListener class names =
+from location [META-INF/spring.factories]: [org.springframework.boot.test.m=
+ock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.moc=
+k.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.au=
+toconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boo=
+t.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionList=
+ener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintO=
+nlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfig=
+ure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.co=
+ntext.web.ServletTestExecutionListener, org.springframework.test.context.su=
+pport.DirtiesContextBeforeModesTestExecutionListener, org.springframework.t=
+est.context.support.DependencyInjectionTestExecutionListener, org.springfra=
+mework.test.context.support.DirtiesContextTestExecutionListener, org.spring=
+framework.test.context.transaction.TransactionalTestExecutionListener, org.=
+springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2019-06-20 20:22:57.436  INFO 41052 --- [           main] b.t.a.o.j.DataJpa=
+TestContextBootstrapper : Using TestExecutionListeners: [org.springframewor=
+k.test.context.web.ServletTestExecutionListener@ca1a4fb, org.springframewor=
+k.test.context.support.DirtiesContextBeforeModesTestExecutionListener@6fbe3=
+362, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListene=
+r@10e9ce5b, org.springframework.boot.test.autoconfigure.SpringBootDependenc=
+yInjectionTestExecutionListener@ac4d34b, org.springframework.test.context.s=
+upport.DirtiesContextTestExecutionListener@bc33894, org.springframework.tes=
+t.context.transaction.TransactionalTestExecutionListener@15783fad, org.spri=
+ngframework.test.context.jdbc.SqlScriptsTestExecutionListener@4b3da04f, org=
+.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@67c=
+f7ce8, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExe=
+cutionListener@75daff1d, org.springframework.boot.test.autoconfigure.web.cl=
+ient.MockRestServiceServerResetTestExecutionListener@210b335c, org.springfr=
+amework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestEx=
+ecutionListener@792c0ea, org.springframework.boot.test.autoconfigure.web.se=
+rvlet.WebDriverTestExecutionListener@1b26d4cc]
+2019-06-20 20:22:57.448  INFO 41052 --- [           main] o.s.t.c.transacti=
+on.TransactionContext   : Began transaction (1) for test context [DefaultTe=
+stContext@7d66842b testClass =3D ProjectDaoTest, testInstance =3D com.fsd.b=
+ackend.Repository.ProjectDaoTest@735bdac7, testMethod =3D testUpdateProject=
+@ProjectDaoTest, testException =3D [null], mergedContextConfiguration =3D [=
+MergedContextConfiguration@4f105c4a testClass =3D ProjectDaoTest, locations=
+ =3D '{}', classes =3D '{class com.fsd.backend.BackendApplication}', contex=
+tInitializerClasses =3D '[]', activeProfiles =3D '{}', propertySourceLocati=
+ons =3D '{}', propertySourceProperties =3D '{org.springframework.boot.test.=
+autoconfigure.orm.jpa.DataJpaTestContextBootstrapper=3Dtrue}', contextCusto=
+mizers =3D set[[ImportsContextCustomizer@42842688 key =3D [@org.springframe=
+work.boot.test.autoconfigure.orm.jpa.AutoConfigureDataJpa(), @org.springfra=
+mework.boot.test.autoconfigure.orm.jpa.AutoConfigureTestEntityManager(), @o=
+rg.springframework.test.context.BootstrapWith(value=3Dclass org.springframe=
+work.boot.test.autoconfigure.orm.jpa.DataJpaTestContextBootstrapper), @org.=
+springframework.boot.test.autoconfigure.filter.TypeExcludeFilters(value=3D[=
+class org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTypeExclud=
+eFilter]), @org.springframework.context.annotation.Import(value=3D[class or=
+g.springframework.boot.autoconfigure.ImportAutoConfigurationImportSelector]=
+), @org.springframework.transaction.annotation.Transactional(propagation=3D=
+REQUIRED, rollbackForClassName=3D[], readOnly=3Dfalse, isolation=3DDEFAULT,=
+ transactionManager=3D, noRollbackFor=3D[], noRollbackForClassName=3D[], va=
+lue=3D, timeout=3D-1, rollbackFor=3D[]), @org.springframework.transaction.a=
+nnotation.EnableTransactionManagement(mode=3DPROXY, order=3D2147483647, pro=
+xyTargetClass=3Dfalse), @org.springframework.boot.test.autoconfigure.orm.jp=
+a.DataJpaTest(showSql=3Dtrue, excludeAutoConfiguration=3D[], excludeFilters=
+=3D[], useDefaultFilters=3Dtrue, includeFilters=3D[], properties=3D[]), @or=
+g.springframework.boot.test.autoconfigure.core.AutoConfigureCache(cacheProv=
+ider=3DNONE), @org.springframework.boot.autoconfigure.ImportAutoConfigurati=
+on(value=3D[], exclude=3D[], classes=3D[]), @org.springframework.context.an=
+notation.Import(value=3D[class org.springframework.transaction.annotation.T=
+ransactionManagementConfigurationSelector]), @org.junit.runner.RunWith(valu=
+e=3Dclass org.springframework.test.context.junit4.SpringRunner), @org.sprin=
+gframework.boot.test.autoconfigure.OverrideAutoConfiguration(enabled=3Dfals=
+e), @org.springframework.boot.test.autoconfigure.properties.PropertyMapping=
+(value=3Dspring.test.database, skip=3DNO), @org.springframework.boot.test.a=
+utoconfigure.jdbc.AutoConfigureTestDatabase(replace=3DANY, connection=3DNON=
+E)]], org.springframework.boot.test.context.filter.ExcludeFilterContextCust=
+omizer@38fc5554, org.springframework.boot.test.json.DuplicateJsonObjectCont=
+extCustomizerFactory$DuplicateJsonObjectContextCustomizer@43b40233, org.spr=
+ingframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springf=
+ramework.boot.test.autoconfigure.OverrideAutoConfigurationContextCustomizer=
+Factory$DisableAutoConfigurationContextCustomizer@16e7b402, org.springframe=
+work.boot.test.autoconfigure.filter.TypeExcludeFiltersContextCustomizer@351=
+584c0, org.springframework.boot.test.autoconfigure.properties.PropertyMappi=
+ngContextCustomizer@2d07316e, org.springframework.boot.test.autoconfigure.w=
+eb.servlet.WebDriverContextCustomizerFactory$Customizer@767a014e], contextL=
+oader =3D 'org.springframework.boot.test.context.SpringBootContextLoader', =
+parent =3D [null]], attributes =3D map[[empty]]]; transaction manager [org.=
+springframework.orm.jpa.JpaTransactionManager@6a1da290]; rollback [false]
+Hibernate: select project0_.project_id as project_1_1_0_, project0_.end_dat=
+e as end_date2_1_0_, project0_.priority as priority3_1_0_, project0_.projec=
+t as project4_1_0_, project0_.start_date as start_da5_1_0_, project0_.user_=
+user_id as user_use6_1_0_ from project project0_ where project0_.project_id=
+=3D?
+Hibernate: call next value for hibernate_sequence
+Hibernate: insert into project (end_date, priority, project, start_date, us=
+er_user_id, project_id) values (?, ?, ?, ?, ?, ?)
+2019-06-20 20:22:57.500  INFO 41052 --- [           main] o.s.t.c.transacti=
+on.TransactionContext   : Committed transaction for test: [DefaultTestConte=
+xt@7d66842b testClass =3D ProjectDaoTest, testInstance =3D com.fsd.backend.=
+Repository.ProjectDaoTest@735bdac7, testMethod =3D testUpdateProject@Projec=
+tDaoTest, testException =3D [null], mergedContextConfiguration =3D [MergedC=
+ontextConfiguration@4f105c4a testClass =3D ProjectDaoTest, locations =3D '{=
+}', classes =3D '{class com.fsd.backend.BackendApplication}', contextInitia=
+lizerClasses =3D '[]', activeProfiles =3D '{}', propertySourceLocations =3D=
+ '{}', propertySourceProperties =3D '{org.springframework.boot.test.autocon=
+figure.orm.jpa.DataJpaTestContextBootstrapper=3Dtrue}', contextCustomizers =
+=3D set[[ImportsContextCustomizer@42842688 key =3D [@org.springframework.bo=
+ot.test.autoconfigure.orm.jpa.AutoConfigureDataJpa(), @org.springframework.=
+boot.test.autoconfigure.orm.jpa.AutoConfigureTestEntityManager(), @org.spri=
+ngframework.test.context.BootstrapWith(value=3Dclass org.springframework.bo=
+ot.test.autoconfigure.orm.jpa.DataJpaTestContextBootstrapper), @org.springf=
+ramework.boot.test.autoconfigure.filter.TypeExcludeFilters(value=3D[class o=
+rg.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTypeExcludeFilter=
+]), @org.springframework.context.annotation.Import(value=3D[class org.sprin=
+gframework.boot.autoconfigure.ImportAutoConfigurationImportSelector]), @org=
+.springframework.transaction.annotation.Transactional(propagation=3DREQUIRE=
+D, rollbackForClassName=3D[], readOnly=3Dfalse, isolation=3DDEFAULT, transa=
+ctionManager=3D, noRollbackFor=3D[], noRollbackForClassName=3D[], value=3D,=
+ timeout=3D-1, rollbackFor=3D[]), @org.springframework.transaction.annotati=
+on.EnableTransactionManagement(mode=3DPROXY, order=3D2147483647, proxyTarge=
+tClass=3Dfalse), @org.springframework.boot.test.autoconfigure.orm.jpa.DataJ=
+paTest(showSql=3Dtrue, excludeAutoConfiguration=3D[], excludeFilters=3D[], =
+useDefaultFilters=3Dtrue, includeFilters=3D[], properties=3D[]), @org.sprin=
+gframework.boot.test.autoconfigure.core.AutoConfigureCache(cacheProvider=3D=
+NONE), @org.springframework.boot.autoconfigure.ImportAutoConfiguration(valu=
+e=3D[], exclude=3D[], classes=3D[]), @org.springframework.context.annotatio=
+n.Import(value=3D[class org.springframework.transaction.annotation.Transact=
+ionManagementConfigurationSelector]), @org.junit.runner.RunWith(value=3Dcla=
+ss org.springframework.test.context.junit4.SpringRunner), @org.springframew=
+ork.boot.test.autoconfigure.OverrideAutoConfiguration(enabled=3Dfalse), @or=
+g.springframework.boot.test.autoconfigure.properties.PropertyMapping(value=
+=3Dspring.test.database, skip=3DNO), @org.springframework.boot.test.autocon=
+figure.jdbc.AutoConfigureTestDatabase(replace=3DANY, connection=3DNONE)]], =
+org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer=
+@38fc5554, org.springframework.boot.test.json.DuplicateJsonObjectContextCus=
+tomizerFactory$DuplicateJsonObjectContextCustomizer@43b40233, org.springfra=
+mework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframewo=
+rk.boot.test.autoconfigure.OverrideAutoConfigurationContextCustomizerFactor=
+y$DisableAutoConfigurationContextCustomizer@16e7b402, org.springframework.b=
+oot.test.autoconfigure.filter.TypeExcludeFiltersContextCustomizer@351584c0,=
+ org.springframework.boot.test.autoconfigure.properties.PropertyMappingCont=
+extCustomizer@2d07316e, org.springframework.boot.test.autoconfigure.web.ser=
+vlet.WebDriverContextCustomizerFactory$Customizer@767a014e], contextLoader =
+=3D 'org.springframework.boot.test.context.SpringBootContextLoader', parent=
+ =3D [null]], attributes =3D map[[empty]]]
+2019-06-20 20:22:57.503  INFO 41052 --- [           main] o.s.t.c.transacti=
+on.TransactionContext   : Began transaction (1) for test context [DefaultTe=
+stContext@7d66842b testClass =3D ProjectDaoTest, testInstance =3D com.fsd.b=
+ackend.Repository.ProjectDaoTest@5087172e, testMethod =3D testAddProject@Pr=
+ojectDaoTest, testException =3D [null], mergedContextConfiguration =3D [Mer=
+gedContextConfiguration@4f105c4a testClass =3D ProjectDaoTest, locations =
+=3D '{}', classes =3D '{class com.fsd.backend.BackendApplication}', context=
+InitializerClasses =3D '[]', activeProfiles =3D '{}', propertySourceLocatio=
+ns =3D '{}', propertySourceProperties =3D '{org.springframework.boot.test.a=
+utoconfigure.orm.jpa.DataJpaTestContextBootstrapper=3Dtrue}', contextCustom=
+izers =3D set[[ImportsContextCustomizer@42842688 key =3D [@org.springframew=
+ork.boot.test.autoconfigure.orm.jpa.AutoConfigureDataJpa(), @org.springfram=
+ework.boot.test.autoconfigure.orm.jpa.AutoConfigureTestEntityManager(), @or=
+g.springframework.test.context.BootstrapWith(value=3Dclass org.springframew=
+ork.boot.test.autoconfigure.orm.jpa.DataJpaTestContextBootstrapper), @org.s=
+pringframework.boot.test.autoconfigure.filter.TypeExcludeFilters(value=3D[c=
+lass org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTypeExclude=
+Filter]), @org.springframework.context.annotation.Import(value=3D[class org=
+.springframework.boot.autoconfigure.ImportAutoConfigurationImportSelector])=
+, @org.springframework.transaction.annotation.Transactional(propagation=3DR=
+EQUIRED, rollbackForClassName=3D[], readOnly=3Dfalse, isolation=3DDEFAULT, =
+transactionManager=3D, noRollbackFor=3D[], noRollbackForClassName=3D[], val=
+ue=3D, timeout=3D-1, rollbackFor=3D[]), @org.springframework.transaction.an=
+notation.EnableTransactionManagement(mode=3DPROXY, order=3D2147483647, prox=
+yTargetClass=3Dfalse), @org.springframework.boot.test.autoconfigure.orm.jpa=
+.DataJpaTest(showSql=3Dtrue, excludeAutoConfiguration=3D[], excludeFilters=
+=3D[], useDefaultFilters=3Dtrue, includeFilters=3D[], properties=3D[]), @or=
+g.springframework.boot.test.autoconfigure.core.AutoConfigureCache(cacheProv=
+ider=3DNONE), @org.springframework.boot.autoconfigure.ImportAutoConfigurati=
+on(value=3D[], exclude=3D[], classes=3D[]), @org.springframework.context.an=
+notation.Import(value=3D[class org.springframework.transaction.annotation.T=
+ransactionManagementConfigurationSelector]), @org.junit.runner.RunWith(valu=
+e=3Dclass org.springframework.test.context.junit4.SpringRunner), @org.sprin=
+gframework.boot.test.autoconfigure.OverrideAutoConfiguration(enabled=3Dfals=
+e), @org.springframework.boot.test.autoconfigure.properties.PropertyMapping=
+(value=3Dspring.test.database, skip=3DNO), @org.springframework.boot.test.a=
+utoconfigure.jdbc.AutoConfigureTestDatabase(replace=3DANY, connection=3DNON=
+E)]], org.springframework.boot.test.context.filter.ExcludeFilterContextCust=
+omizer@38fc5554, org.springframework.boot.test.json.DuplicateJsonObjectCont=
+extCustomizerFactory$DuplicateJsonObjectContextCustomizer@43b40233, org.spr=
+ingframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springf=
+ramework.boot.test.autoconfigure.OverrideAutoConfigurationContextCustomizer=
+Factory$DisableAutoConfigurationContextCustomizer@16e7b402, org.springframe=
+work.boot.test.autoconfigure.filter.TypeExcludeFiltersContextCustomizer@351=
+584c0, org.springframework.boot.test.autoconfigure.properties.PropertyMappi=
+ngContextCustomizer@2d07316e, org.springframework.boot.test.autoconfigure.w=
+eb.servlet.WebDriverContextCustomizerFactory$Customizer@767a014e], contextL=
+oader =3D 'org.springframework.boot.test.context.SpringBootContextLoader', =
+parent =3D [null]], attributes =3D map[[empty]]]; transaction manager [org.=
+springframework.orm.jpa.JpaTransactionManager@6a1da290]; rollback [false]
+Hibernate: select project0_.project_id as project_1_1_0_, project0_.end_dat=
+e as end_date2_1_0_, project0_.priority as priority3_1_0_, project0_.projec=
+t as project4_1_0_, project0_.start_date as start_da5_1_0_, project0_.user_=
+user_id as user_use6_1_0_ from project project0_ where project0_.project_id=
+=3D?
+Hibernate: call next value for hibernate_sequence
+Hibernate: insert into project (end_date, priority, project, start_date, us=
+er_user_id, project_id) values (?, ?, ?, ?, ?, ?)
+2019-06-20 20:22:57.535  INFO 41052 --- [           main] o.s.t.c.transacti=
+on.TransactionContext   : Committed transaction for test: [DefaultTestConte=
+xt@7d66842b testClass =3D ProjectDaoTest, testInstance =3D com.fsd.backend.=
+Repository.ProjectDaoTest@5087172e, testMethod =3D testAddProject@ProjectDa=
+oTest, testException =3D [null], mergedContextConfiguration =3D [MergedCont=
+extConfiguration@4f105c4a testClass =3D ProjectDaoTest, locations =3D '{}',=
+ classes =3D '{class com.fsd.backend.BackendApplication}', contextInitializ=
+erClasses =3D '[]', activeProfiles =3D '{}', propertySourceLocations =3D '{=
+}', propertySourceProperties =3D '{org.springframework.boot.test.autoconfig=
+ure.orm.jpa.DataJpaTestContextBootstrapper=3Dtrue}', contextCustomizers =3D=
+ set[[ImportsContextCustomizer@42842688 key =3D [@org.springframework.boot.=
+test.autoconfigure.orm.jpa.AutoConfigureDataJpa(), @org.springframework.boo=
+t.test.autoconfigure.orm.jpa.AutoConfigureTestEntityManager(), @org.springf=
+ramework.test.context.BootstrapWith(value=3Dclass org.springframework.boot.=
+test.autoconfigure.orm.jpa.DataJpaTestContextBootstrapper), @org.springfram=
+ework.boot.test.autoconfigure.filter.TypeExcludeFilters(value=3D[class org.=
+springframework.boot.test.autoconfigure.orm.jpa.DataJpaTypeExcludeFilter]),=
+ @org.springframework.context.annotation.Import(value=3D[class org.springfr=
+amework.boot.autoconfigure.ImportAutoConfigurationImportSelector]), @org.sp=
+ringframework.transaction.annotation.Transactional(propagation=3DREQUIRED, =
+rollbackForClassName=3D[], readOnly=3Dfalse, isolation=3DDEFAULT, transacti=
+onManager=3D, noRollbackFor=3D[], noRollbackForClassName=3D[], value=3D, ti=
+meout=3D-1, rollbackFor=3D[]), @org.springframework.transaction.annotation.=
+EnableTransactionManagement(mode=3DPROXY, order=3D2147483647, proxyTargetCl=
+ass=3Dfalse), @org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaT=
+est(showSql=3Dtrue, excludeAutoConfiguration=3D[], excludeFilters=3D[], use=
+DefaultFilters=3Dtrue, includeFilters=3D[], properties=3D[]), @org.springfr=
+amework.boot.test.autoconfigure.core.AutoConfigureCache(cacheProvider=3DNON=
+E), @org.springframework.boot.autoconfigure.ImportAutoConfiguration(value=
+=3D[], exclude=3D[], classes=3D[]), @org.springframework.context.annotation=
+.Import(value=3D[class org.springframework.transaction.annotation.Transacti=
+onManagementConfigurationSelector]), @org.junit.runner.RunWith(value=3Dclas=
+s org.springframework.test.context.junit4.SpringRunner), @org.springframewo=
+rk.boot.test.autoconfigure.OverrideAutoConfiguration(enabled=3Dfalse), @org=
+.springframework.boot.test.autoconfigure.properties.PropertyMapping(value=
+=3Dspring.test.database, skip=3DNO), @org.springframework.boot.test.autocon=
+figure.jdbc.AutoConfigureTestDatabase(replace=3DANY, connection=3DNONE)]], =
+org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer=
+@38fc5554, org.springframework.boot.test.json.DuplicateJsonObjectContextCus=
+tomizerFactory$DuplicateJsonObjectContextCustomizer@43b40233, org.springfra=
+mework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframewo=
+rk.boot.test.autoconfigure.OverrideAutoConfigurationContextCustomizerFactor=
+y$DisableAutoConfigurationContextCustomizer@16e7b402, org.springframework.b=
+oot.test.autoconfigure.filter.TypeExcludeFiltersContextCustomizer@351584c0,=
+ org.springframework.boot.test.autoconfigure.properties.PropertyMappingCont=
+extCustomizer@2d07316e, org.springframework.boot.test.autoconfigure.web.ser=
+vlet.WebDriverContextCustomizerFactory$Customizer@767a014e], contextLoader =
+=3D 'org.springframework.boot.test.context.SpringBootContextLoader', parent=
+ =3D [null]], attributes =3D map[[empty]]]
+2019-06-20 20:22:57.575  INFO 41052 --- [           main] o.s.t.c.transacti=
+on.TransactionContext   : Began transaction (1) for test context [DefaultTe=
+stContext@7d66842b testClass =3D ProjectDaoTest, testInstance =3D com.fsd.b=
+ackend.Repository.ProjectDaoTest@13895efa, testMethod =3D testfindProjectBy=
+Id@ProjectDaoTest, testException =3D [null], mergedContextConfiguration =3D=
+ [MergedContextConfiguration@4f105c4a testClass =3D ProjectDaoTest, locatio=
+ns =3D '{}', classes =3D '{class com.fsd.backend.BackendApplication}', cont=
+extInitializerClasses =3D '[]', activeProfiles =3D '{}', propertySourceLoca=
+tions =3D '{}', propertySourceProperties =3D '{org.springframework.boot.tes=
+t.autoconfigure.orm.jpa.DataJpaTestContextBootstrapper=3Dtrue}', contextCus=
+tomizers =3D set[[ImportsContextCustomizer@42842688 key =3D [@org.springfra=
+mework.boot.test.autoconfigure.orm.jpa.AutoConfigureDataJpa(), @org.springf=
+ramework.boot.test.autoconfigure.orm.jpa.AutoConfigureTestEntityManager(), =
+@org.springframework.test.context.BootstrapWith(value=3Dclass org.springfra=
+mework.boot.test.autoconfigure.orm.jpa.DataJpaTestContextBootstrapper), @or=
+g.springframework.boot.test.autoconfigure.filter.TypeExcludeFilters(value=
+=3D[class org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTypeEx=
+cludeFilter]), @org.springframework.context.annotation.Import(value=3D[clas=
+s org.springframework.boot.autoconfigure.ImportAutoConfigurationImportSelec=
+tor]), @org.springframework.transaction.annotation.Transactional(propagatio=
+n=3DREQUIRED, rollbackForClassName=3D[], readOnly=3Dfalse, isolation=3DDEFA=
+ULT, transactionManager=3D, noRollbackFor=3D[], noRollbackForClassName=3D[]=
+, value=3D, timeout=3D-1, rollbackFor=3D[]), @org.springframework.transacti=
+on.annotation.EnableTransactionManagement(mode=3DPROXY, order=3D2147483647,=
+ proxyTargetClass=3Dfalse), @org.springframework.boot.test.autoconfigure.or=
+m.jpa.DataJpaTest(showSql=3Dtrue, excludeAutoConfiguration=3D[], excludeFil=
+ters=3D[], useDefaultFilters=3Dtrue, includeFilters=3D[], properties=3D[]),=
+ @org.springframework.boot.test.autoconfigure.core.AutoConfigureCache(cache=
+Provider=3DNONE), @org.springframework.boot.autoconfigure.ImportAutoConfigu=
+ration(value=3D[], exclude=3D[], classes=3D[]), @org.springframework.contex=
+t.annotation.Import(value=3D[class org.springframework.transaction.annotati=
+on.TransactionManagementConfigurationSelector]), @org.junit.runner.RunWith(=
+value=3Dclass org.springframework.test.context.junit4.SpringRunner), @org.s=
+pringframework.boot.test.autoconfigure.OverrideAutoConfiguration(enabled=3D=
+false), @org.springframework.boot.test.autoconfigure.properties.PropertyMap=
+ping(value=3Dspring.test.database, skip=3DNO), @org.springframework.boot.te=
+st.autoconfigure.jdbc.AutoConfigureTestDatabase(replace=3DANY, connection=
+=3DNONE)]], org.springframework.boot.test.context.filter.ExcludeFilterConte=
+xtCustomizer@38fc5554, org.springframework.boot.test.json.DuplicateJsonObje=
+ctContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@43b40233, o=
+rg.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.s=
+pringframework.boot.test.autoconfigure.OverrideAutoConfigurationContextCust=
+omizerFactory$DisableAutoConfigurationContextCustomizer@16e7b402, org.sprin=
+gframework.boot.test.autoconfigure.filter.TypeExcludeFiltersContextCustomiz=
+er@351584c0, org.springframework.boot.test.autoconfigure.properties.Propert=
+yMappingContextCustomizer@2d07316e, org.springframework.boot.test.autoconfi=
+gure.web.servlet.WebDriverContextCustomizerFactory$Customizer@767a014e], co=
+ntextLoader =3D 'org.springframework.boot.test.context.SpringBootContextLoa=
+der', parent =3D [null]], attributes =3D map[[empty]]]; transaction manager=
+ [org.springframework.orm.jpa.JpaTransactionManager@6a1da290]; rollback [fa=
+lse]
+Hibernate: select project0_.project_id as project_1_1_0_, project0_.end_dat=
+e as end_date2_1_0_, project0_.priority as priority3_1_0_, project0_.projec=
+t as project4_1_0_, project0_.start_date as start_da5_1_0_, project0_.user_=
+user_id as user_use6_1_0_ from project project0_ where project0_.project_id=
+=3D?
+Hibernate: call next value for hibernate_sequence
+Hibernate: insert into project (end_date, priority, project, start_date, us=
+er_user_id, project_id) values (?, ?, ?, ?, ?, ?)
+2019-06-20 20:22:57.591  INFO 41052 --- [           main] o.s.t.c.transacti=
+on.TransactionContext   : Committed transaction for test: [DefaultTestConte=
+xt@7d66842b testClass =3D ProjectDaoTest, testInstance =3D com.fsd.backend.=
+Repository.ProjectDaoTest@13895efa, testMethod =3D testfindProjectById@Proj=
+ectDaoTest, testException =3D [null], mergedContextConfiguration =3D [Merge=
+dContextConfiguration@4f105c4a testClass =3D ProjectDaoTest, locations =3D =
+'{}', classes =3D '{class com.fsd.backend.BackendApplication}', contextInit=
+ializerClasses =3D '[]', activeProfiles =3D '{}', propertySourceLocations =
+=3D '{}', propertySourceProperties =3D '{org.springframework.boot.test.auto=
+configure.orm.jpa.DataJpaTestContextBootstrapper=3Dtrue}', contextCustomize=
+rs =3D set[[ImportsContextCustomizer@42842688 key =3D [@org.springframework=
+.boot.test.autoconfigure.orm.jpa.AutoConfigureDataJpa(), @org.springframewo=
+rk.boot.test.autoconfigure.orm.jpa.AutoConfigureTestEntityManager(), @org.s=
+pringframework.test.context.BootstrapWith(value=3Dclass org.springframework=
+.boot.test.autoconfigure.orm.jpa.DataJpaTestContextBootstrapper), @org.spri=
+ngframework.boot.test.autoconfigure.filter.TypeExcludeFilters(value=3D[clas=
+s org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTypeExcludeFil=
+ter]), @org.springframework.context.annotation.Import(value=3D[class org.sp=
+ringframework.boot.autoconfigure.ImportAutoConfigurationImportSelector]), @=
+org.springframework.transaction.annotation.Transactional(propagation=3DREQU=
+IRED, rollbackForClassName=3D[], readOnly=3Dfalse, isolation=3DDEFAULT, tra=
+nsactionManager=3D, noRollbackFor=3D[], noRollbackForClassName=3D[], value=
+=3D, timeout=3D-1, rollbackFor=3D[]), @org.springframework.transaction.anno=
+tation.EnableTransactionManagement(mode=3DPROXY, order=3D2147483647, proxyT=
+argetClass=3Dfalse), @org.springframework.boot.test.autoconfigure.orm.jpa.D=
+ataJpaTest(showSql=3Dtrue, excludeAutoConfiguration=3D[], excludeFilters=3D=
+[], useDefaultFilters=3Dtrue, includeFilters=3D[], properties=3D[]), @org.s=
+pringframework.boot.test.autoconfigure.core.AutoConfigureCache(cacheProvide=
+r=3DNONE), @org.springframework.boot.autoconfigure.ImportAutoConfiguration(=
+value=3D[], exclude=3D[], classes=3D[]), @org.springframework.context.annot=
+ation.Import(value=3D[class org.springframework.transaction.annotation.Tran=
+sactionManagementConfigurationSelector]), @org.junit.runner.RunWith(value=
+=3Dclass org.springframework.test.context.junit4.SpringRunner), @org.spring=
+framework.boot.test.autoconfigure.OverrideAutoConfiguration(enabled=3Dfalse=
+), @org.springframework.boot.test.autoconfigure.properties.PropertyMapping(=
+value=3Dspring.test.database, skip=3DNO), @org.springframework.boot.test.au=
+toconfigure.jdbc.AutoConfigureTestDatabase(replace=3DANY, connection=3DNONE=
+)]], org.springframework.boot.test.context.filter.ExcludeFilterContextCusto=
+mizer@38fc5554, org.springframework.boot.test.json.DuplicateJsonObjectConte=
+xtCustomizerFactory$DuplicateJsonObjectContextCustomizer@43b40233, org.spri=
+ngframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springfr=
+amework.boot.test.autoconfigure.OverrideAutoConfigurationContextCustomizerF=
+actory$DisableAutoConfigurationContextCustomizer@16e7b402, org.springframew=
+ork.boot.test.autoconfigure.filter.TypeExcludeFiltersContextCustomizer@3515=
+84c0, org.springframework.boot.test.autoconfigure.properties.PropertyMappin=
+gContextCustomizer@2d07316e, org.springframework.boot.test.autoconfigure.we=
+b.servlet.WebDriverContextCustomizerFactory$Customizer@767a014e], contextLo=
+ader =3D 'org.springframework.boot.test.context.SpringBootContextLoader', p=
+arent =3D [null]], attributes =3D map[[empty]]]
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.19=
+1 s - in com.fsd.backend.Repository.ProjectDaoTest
+[INFO] Running com.fsd.backend.Repository.UserDaoTest
+2019-06-20 20:22:57.593  INFO 41052 --- [           main] b.t.a.o.j.DataJpa=
+TestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarc=
+hy found for test class [com.fsd.backend.Repository.UserDaoTest], using Spr=
+ingBootContextLoader
+2019-06-20 20:22:57.594  INFO 41052 --- [           main] o.s.t.c.support.A=
+bstractContextLoader    : Could not detect default resource locations for t=
+est class [com.fsd.backend.Repository.UserDaoTest]: no resource found for s=
+uffixes {-context.xml, Context.groovy}.
+2019-06-20 20:22:57.594  INFO 41052 --- [           main] t.c.s.AnnotationC=
+onfigContextLoaderUtils : Could not detect default configuration classes fo=
+r test class [com.fsd.backend.Repository.UserDaoTest]: UserDaoTest does not=
+ declare any static, non-private, non-final, nested classes annotated with =
+@Configuration.
+2019-06-20 20:22:57.604  INFO 41052 --- [           main] .b.t.c.SpringBoot=
+TestContextBootstrapper : Found @SpringBootConfiguration com.fsd.backend.Ba=
+ckendApplication for test class com.fsd.backend.Repository.UserDaoTest
+2019-06-20 20:22:57.604  INFO 41052 --- [           main] b.t.a.o.j.DataJpa=
+TestContextBootstrapper : Loaded default TestExecutionListener class names =
+from location [META-INF/spring.factories]: [org.springframework.boot.test.m=
+ock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.moc=
+k.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.au=
+toconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boo=
+t.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionList=
+ener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintO=
+nlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfig=
+ure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.co=
+ntext.web.ServletTestExecutionListener, org.springframework.test.context.su=
+pport.DirtiesContextBeforeModesTestExecutionListener, org.springframework.t=
+est.context.support.DependencyInjectionTestExecutionListener, org.springfra=
+mework.test.context.support.DirtiesContextTestExecutionListener, org.spring=
+framework.test.context.transaction.TransactionalTestExecutionListener, org.=
+springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2019-06-20 20:22:57.605  INFO 41052 --- [           main] b.t.a.o.j.DataJpa=
+TestContextBootstrapper : Using TestExecutionListeners: [org.springframewor=
+k.test.context.web.ServletTestExecutionListener@13dfa135, org.springframewo=
+rk.test.context.support.DirtiesContextBeforeModesTestExecutionListener@1b1a=
+9e1f, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListen=
+er@2fa5dcc0, org.springframework.boot.test.autoconfigure.SpringBootDependen=
+cyInjectionTestExecutionListener@3d2c43d1, org.springframework.test.context=
+.support.DirtiesContextTestExecutionListener@53149b48, org.springframework.=
+test.context.transaction.TransactionalTestExecutionListener@1cb10d53, org.s=
+pringframework.test.context.jdbc.SqlScriptsTestExecutionListener@1d7381d9, =
+org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@=
+421e7b6d, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTest=
+ExecutionListener@35a766bd, org.springframework.boot.test.autoconfigure.web=
+.client.MockRestServiceServerResetTestExecutionListener@21682ecf, org.sprin=
+gframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTes=
+tExecutionListener@20941e72, org.springframework.boot.test.autoconfigure.we=
+b.servlet.WebDriverTestExecutionListener@11e0dc1e]
+2019-06-20 20:22:57.611  INFO 41052 --- [           main] o.s.t.c.transacti=
+on.TransactionContext   : Began transaction (1) for test context [DefaultTe=
+stContext@68724ca5 testClass =3D UserDaoTest, testInstance =3D com.fsd.back=
+end.Repository.UserDaoTest@11e767f0, testMethod =3D testAddUser@UserDaoTest=
+, testException =3D [null], mergedContextConfiguration =3D [MergedContextCo=
+nfiguration@7ac58d1a testClass =3D UserDaoTest, locations =3D '{}', classes=
+ =3D '{class com.fsd.backend.BackendApplication}', contextInitializerClasse=
+s =3D '[]', activeProfiles =3D '{}', propertySourceLocations =3D '{}', prop=
+ertySourceProperties =3D '{org.springframework.boot.test.autoconfigure.orm.=
+jpa.DataJpaTestContextBootstrapper=3Dtrue}', contextCustomizers =3D set[[Im=
+portsContextCustomizer@2e8f3b8e key =3D [@org.springframework.boot.test.aut=
+oconfigure.orm.jpa.AutoConfigureDataJpa(), @org.springframework.boot.test.a=
+utoconfigure.orm.jpa.AutoConfigureTestEntityManager(), @org.springframework=
+.test.context.BootstrapWith(value=3Dclass org.springframework.boot.test.aut=
+oconfigure.orm.jpa.DataJpaTestContextBootstrapper), @org.springframework.bo=
+ot.test.autoconfigure.filter.TypeExcludeFilters(value=3D[class org.springfr=
+amework.boot.test.autoconfigure.orm.jpa.DataJpaTypeExcludeFilter]), @org.sp=
+ringframework.context.annotation.Import(value=3D[class org.springframework.=
+boot.autoconfigure.ImportAutoConfigurationImportSelector]), @org.springfram=
+ework.transaction.annotation.Transactional(propagation=3DREQUIRED, rollback=
+ForClassName=3D[], readOnly=3Dfalse, isolation=3DDEFAULT, transactionManage=
+r=3D, noRollbackFor=3D[], noRollbackForClassName=3D[], value=3D, timeout=3D=
+-1, rollbackFor=3D[]), @org.springframework.transaction.annotation.EnableTr=
+ansactionManagement(mode=3DPROXY, order=3D2147483647, proxyTargetClass=3Dfa=
+lse), @org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest(show=
+Sql=3Dtrue, excludeAutoConfiguration=3D[], excludeFilters=3D[], useDefaultF=
+ilters=3Dtrue, includeFilters=3D[], properties=3D[]), @org.springframework.=
+boot.test.autoconfigure.core.AutoConfigureCache(cacheProvider=3DNONE), @org=
+.springframework.boot.autoconfigure.ImportAutoConfiguration(value=3D[], exc=
+lude=3D[], classes=3D[]), @org.springframework.context.annotation.Import(va=
+lue=3D[class org.springframework.transaction.annotation.TransactionManageme=
+ntConfigurationSelector]), @org.junit.runner.RunWith(value=3Dclass org.spri=
+ngframework.test.context.junit4.SpringRunner), @org.springframework.boot.te=
+st.autoconfigure.OverrideAutoConfiguration(enabled=3Dfalse), @org.springfra=
+mework.boot.test.autoconfigure.properties.PropertyMapping(value=3Dspring.te=
+st.database, skip=3DNO), @org.springframework.boot.test.autoconfigure.jdbc.=
+AutoConfigureTestDatabase(replace=3DANY, connection=3DNONE)]], org.springfr=
+amework.boot.test.context.filter.ExcludeFilterContextCustomizer@38fc5554, o=
+rg.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFacto=
+ry$DuplicateJsonObjectContextCustomizer@43b40233, org.springframework.boot.=
+test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test=
+.autoconfigure.OverrideAutoConfigurationContextCustomizerFactory$DisableAut=
+oConfigurationContextCustomizer@16e7b402, org.springframework.boot.test.aut=
+oconfigure.filter.TypeExcludeFiltersContextCustomizer@351584c0, org.springf=
+ramework.boot.test.autoconfigure.properties.PropertyMappingContextCustomize=
+r@2d07316e, org.springframework.boot.test.autoconfigure.web.servlet.WebDriv=
+erContextCustomizerFactory$Customizer@767a014e], contextLoader =3D 'org.spr=
+ingframework.boot.test.context.SpringBootContextLoader', parent =3D [null]]=
+, attributes =3D map[[empty]]]; transaction manager [org.springframework.or=
+m.jpa.JpaTransactionManager@6a1da290]; rollback [false]
+Hibernate: call next value for hibernate_sequence
+Hibernate: insert into user (employee_id, first_name, last_name, user_id) v=
+alues (?, ?, ?, ?)
+2019-06-20 20:22:57.631  INFO 41052 --- [           main] o.s.t.c.transacti=
+on.TransactionContext   : Committed transaction for test: [DefaultTestConte=
+xt@68724ca5 testClass =3D UserDaoTest, testInstance =3D com.fsd.backend.Rep=
+ository.UserDaoTest@11e767f0, testMethod =3D testAddUser@UserDaoTest, testE=
+xception =3D [null], mergedContextConfiguration =3D [MergedContextConfigura=
+tion@7ac58d1a testClass =3D UserDaoTest, locations =3D '{}', classes =3D '{=
+class com.fsd.backend.BackendApplication}', contextInitializerClasses =3D '=
+[]', activeProfiles =3D '{}', propertySourceLocations =3D '{}', propertySou=
+rceProperties =3D '{org.springframework.boot.test.autoconfigure.orm.jpa.Dat=
+aJpaTestContextBootstrapper=3Dtrue}', contextCustomizers =3D set[[ImportsCo=
+ntextCustomizer@2e8f3b8e key =3D [@org.springframework.boot.test.autoconfig=
+ure.orm.jpa.AutoConfigureDataJpa(), @org.springframework.boot.test.autoconf=
+igure.orm.jpa.AutoConfigureTestEntityManager(), @org.springframework.test.c=
+ontext.BootstrapWith(value=3Dclass org.springframework.boot.test.autoconfig=
+ure.orm.jpa.DataJpaTestContextBootstrapper), @org.springframework.boot.test=
+.autoconfigure.filter.TypeExcludeFilters(value=3D[class org.springframework=
+.boot.test.autoconfigure.orm.jpa.DataJpaTypeExcludeFilter]), @org.springfra=
+mework.context.annotation.Import(value=3D[class org.springframework.boot.au=
+toconfigure.ImportAutoConfigurationImportSelector]), @org.springframework.t=
+ransaction.annotation.Transactional(propagation=3DREQUIRED, rollbackForClas=
+sName=3D[], readOnly=3Dfalse, isolation=3DDEFAULT, transactionManager=3D, n=
+oRollbackFor=3D[], noRollbackForClassName=3D[], value=3D, timeout=3D-1, rol=
+lbackFor=3D[]), @org.springframework.transaction.annotation.EnableTransacti=
+onManagement(mode=3DPROXY, order=3D2147483647, proxyTargetClass=3Dfalse), @=
+org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest(showSql=3Dt=
+rue, excludeAutoConfiguration=3D[], excludeFilters=3D[], useDefaultFilters=
+=3Dtrue, includeFilters=3D[], properties=3D[]), @org.springframework.boot.t=
+est.autoconfigure.core.AutoConfigureCache(cacheProvider=3DNONE), @org.sprin=
+gframework.boot.autoconfigure.ImportAutoConfiguration(value=3D[], exclude=
+=3D[], classes=3D[]), @org.springframework.context.annotation.Import(value=
+=3D[class org.springframework.transaction.annotation.TransactionManagementC=
+onfigurationSelector]), @org.junit.runner.RunWith(value=3Dclass org.springf=
+ramework.test.context.junit4.SpringRunner), @org.springframework.boot.test.=
+autoconfigure.OverrideAutoConfiguration(enabled=3Dfalse), @org.springframew=
+ork.boot.test.autoconfigure.properties.PropertyMapping(value=3Dspring.test.=
+database, skip=3DNO), @org.springframework.boot.test.autoconfigure.jdbc.Aut=
+oConfigureTestDatabase(replace=3DANY, connection=3DNONE)]], org.springframe=
+work.boot.test.context.filter.ExcludeFilterContextCustomizer@38fc5554, org.=
+springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$=
+DuplicateJsonObjectContextCustomizer@43b40233, org.springframework.boot.tes=
+t.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.au=
+toconfigure.OverrideAutoConfigurationContextCustomizerFactory$DisableAutoCo=
+nfigurationContextCustomizer@16e7b402, org.springframework.boot.test.autoco=
+nfigure.filter.TypeExcludeFiltersContextCustomizer@351584c0, org.springfram=
+ework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@2=
+d07316e, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverC=
+ontextCustomizerFactory$Customizer@767a014e], contextLoader =3D 'org.spring=
+framework.boot.test.context.SpringBootContextLoader', parent =3D [null]], a=
+ttributes =3D map[[empty]]]
+2019-06-20 20:22:57.635  INFO 41052 --- [           main] o.s.t.c.transacti=
+on.TransactionContext   : Began transaction (1) for test context [DefaultTe=
+stContext@68724ca5 testClass =3D UserDaoTest, testInstance =3D com.fsd.back=
+end.Repository.UserDaoTest@4538d24e, testMethod =3D testUpdateUser@UserDaoT=
+est, testException =3D [null], mergedContextConfiguration =3D [MergedContex=
+tConfiguration@7ac58d1a testClass =3D UserDaoTest, locations =3D '{}', clas=
+ses =3D '{class com.fsd.backend.BackendApplication}', contextInitializerCla=
+sses =3D '[]', activeProfiles =3D '{}', propertySourceLocations =3D '{}', p=
+ropertySourceProperties =3D '{org.springframework.boot.test.autoconfigure.o=
+rm.jpa.DataJpaTestContextBootstrapper=3Dtrue}', contextCustomizers =3D set[=
+[ImportsContextCustomizer@2e8f3b8e key =3D [@org.springframework.boot.test.=
+autoconfigure.orm.jpa.AutoConfigureDataJpa(), @org.springframework.boot.tes=
+t.autoconfigure.orm.jpa.AutoConfigureTestEntityManager(), @org.springframew=
+ork.test.context.BootstrapWith(value=3Dclass org.springframework.boot.test.=
+autoconfigure.orm.jpa.DataJpaTestContextBootstrapper), @org.springframework=
+.boot.test.autoconfigure.filter.TypeExcludeFilters(value=3D[class org.sprin=
+gframework.boot.test.autoconfigure.orm.jpa.DataJpaTypeExcludeFilter]), @org=
+.springframework.context.annotation.Import(value=3D[class org.springframewo=
+rk.boot.autoconfigure.ImportAutoConfigurationImportSelector]), @org.springf=
+ramework.transaction.annotation.Transactional(propagation=3DREQUIRED, rollb=
+ackForClassName=3D[], readOnly=3Dfalse, isolation=3DDEFAULT, transactionMan=
+ager=3D, noRollbackFor=3D[], noRollbackForClassName=3D[], value=3D, timeout=
+=3D-1, rollbackFor=3D[]), @org.springframework.transaction.annotation.Enabl=
+eTransactionManagement(mode=3DPROXY, order=3D2147483647, proxyTargetClass=
+=3Dfalse), @org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest=
+(showSql=3Dtrue, excludeAutoConfiguration=3D[], excludeFilters=3D[], useDef=
+aultFilters=3Dtrue, includeFilters=3D[], properties=3D[]), @org.springframe=
+work.boot.test.autoconfigure.core.AutoConfigureCache(cacheProvider=3DNONE),=
+ @org.springframework.boot.autoconfigure.ImportAutoConfiguration(value=3D[]=
+, exclude=3D[], classes=3D[]), @org.springframework.context.annotation.Impo=
+rt(value=3D[class org.springframework.transaction.annotation.TransactionMan=
+agementConfigurationSelector]), @org.junit.runner.RunWith(value=3Dclass org=
+.springframework.test.context.junit4.SpringRunner), @org.springframework.bo=
+ot.test.autoconfigure.OverrideAutoConfiguration(enabled=3Dfalse), @org.spri=
+ngframework.boot.test.autoconfigure.properties.PropertyMapping(value=3Dspri=
+ng.test.database, skip=3DNO), @org.springframework.boot.test.autoconfigure.=
+jdbc.AutoConfigureTestDatabase(replace=3DANY, connection=3DNONE)]], org.spr=
+ingframework.boot.test.context.filter.ExcludeFilterContextCustomizer@38fc55=
+54, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizer=
+Factory$DuplicateJsonObjectContextCustomizer@43b40233, org.springframework.=
+boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot=
+.test.autoconfigure.OverrideAutoConfigurationContextCustomizerFactory$Disab=
+leAutoConfigurationContextCustomizer@16e7b402, org.springframework.boot.tes=
+t.autoconfigure.filter.TypeExcludeFiltersContextCustomizer@351584c0, org.sp=
+ringframework.boot.test.autoconfigure.properties.PropertyMappingContextCust=
+omizer@2d07316e, org.springframework.boot.test.autoconfigure.web.servlet.We=
+bDriverContextCustomizerFactory$Customizer@767a014e], contextLoader =3D 'or=
+g.springframework.boot.test.context.SpringBootContextLoader', parent =3D [n=
+ull]], attributes =3D map[[empty]]]; transaction manager [org.springframewo=
+rk.orm.jpa.JpaTransactionManager@6a1da290]; rollback [false]
+Hibernate: call next value for hibernate_sequence
+Hibernate: insert into user (employee_id, first_name, last_name, user_id) v=
+alues (?, ?, ?, ?)
+2019-06-20 20:22:57.651  INFO 41052 --- [           main] o.s.t.c.transacti=
+on.TransactionContext   : Committed transaction for test: [DefaultTestConte=
+xt@68724ca5 testClass =3D UserDaoTest, testInstance =3D com.fsd.backend.Rep=
+ository.UserDaoTest@4538d24e, testMethod =3D testUpdateUser@UserDaoTest, te=
+stException =3D [null], mergedContextConfiguration =3D [MergedContextConfig=
+uration@7ac58d1a testClass =3D UserDaoTest, locations =3D '{}', classes =3D=
+ '{class com.fsd.backend.BackendApplication}', contextInitializerClasses =
+=3D '[]', activeProfiles =3D '{}', propertySourceLocations =3D '{}', proper=
+tySourceProperties =3D '{org.springframework.boot.test.autoconfigure.orm.jp=
+a.DataJpaTestContextBootstrapper=3Dtrue}', contextCustomizers =3D set[[Impo=
+rtsContextCustomizer@2e8f3b8e key =3D [@org.springframework.boot.test.autoc=
+onfigure.orm.jpa.AutoConfigureDataJpa(), @org.springframework.boot.test.aut=
+oconfigure.orm.jpa.AutoConfigureTestEntityManager(), @org.springframework.t=
+est.context.BootstrapWith(value=3Dclass org.springframework.boot.test.autoc=
+onfigure.orm.jpa.DataJpaTestContextBootstrapper), @org.springframework.boot=
+.test.autoconfigure.filter.TypeExcludeFilters(value=3D[class org.springfram=
+ework.boot.test.autoconfigure.orm.jpa.DataJpaTypeExcludeFilter]), @org.spri=
+ngframework.context.annotation.Import(value=3D[class org.springframework.bo=
+ot.autoconfigure.ImportAutoConfigurationImportSelector]), @org.springframew=
+ork.transaction.annotation.Transactional(propagation=3DREQUIRED, rollbackFo=
+rClassName=3D[], readOnly=3Dfalse, isolation=3DDEFAULT, transactionManager=
+=3D, noRollbackFor=3D[], noRollbackForClassName=3D[], value=3D, timeout=3D-=
+1, rollbackFor=3D[]), @org.springframework.transaction.annotation.EnableTra=
+nsactionManagement(mode=3DPROXY, order=3D2147483647, proxyTargetClass=3Dfal=
+se), @org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest(showS=
+ql=3Dtrue, excludeAutoConfiguration=3D[], excludeFilters=3D[], useDefaultFi=
+lters=3Dtrue, includeFilters=3D[], properties=3D[]), @org.springframework.b=
+oot.test.autoconfigure.core.AutoConfigureCache(cacheProvider=3DNONE), @org.=
+springframework.boot.autoconfigure.ImportAutoConfiguration(value=3D[], excl=
+ude=3D[], classes=3D[]), @org.springframework.context.annotation.Import(val=
+ue=3D[class org.springframework.transaction.annotation.TransactionManagemen=
+tConfigurationSelector]), @org.junit.runner.RunWith(value=3Dclass org.sprin=
+gframework.test.context.junit4.SpringRunner), @org.springframework.boot.tes=
+t.autoconfigure.OverrideAutoConfiguration(enabled=3Dfalse), @org.springfram=
+ework.boot.test.autoconfigure.properties.PropertyMapping(value=3Dspring.tes=
+t.database, skip=3DNO), @org.springframework.boot.test.autoconfigure.jdbc.A=
+utoConfigureTestDatabase(replace=3DANY, connection=3DNONE)]], org.springfra=
+mework.boot.test.context.filter.ExcludeFilterContextCustomizer@38fc5554, or=
+g.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactor=
+y$DuplicateJsonObjectContextCustomizer@43b40233, org.springframework.boot.t=
+est.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.=
+autoconfigure.OverrideAutoConfigurationContextCustomizerFactory$DisableAuto=
+ConfigurationContextCustomizer@16e7b402, org.springframework.boot.test.auto=
+configure.filter.TypeExcludeFiltersContextCustomizer@351584c0, org.springfr=
+amework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer=
+@2d07316e, org.springframework.boot.test.autoconfigure.web.servlet.WebDrive=
+rContextCustomizerFactory$Customizer@767a014e], contextLoader =3D 'org.spri=
+ngframework.boot.test.context.SpringBootContextLoader', parent =3D [null]],=
+ attributes =3D map[[empty]]]
+2019-06-20 20:22:57.654  INFO 41052 --- [           main] o.s.t.c.transacti=
+on.TransactionContext   : Began transaction (1) for test context [DefaultTe=
+stContext@68724ca5 testClass =3D UserDaoTest, testInstance =3D com.fsd.back=
+end.Repository.UserDaoTest@5cd4c419, testMethod =3D testfindUserById@UserDa=
+oTest, testException =3D [null], mergedContextConfiguration =3D [MergedCont=
+extConfiguration@7ac58d1a testClass =3D UserDaoTest, locations =3D '{}', cl=
+asses =3D '{class com.fsd.backend.BackendApplication}', contextInitializerC=
+lasses =3D '[]', activeProfiles =3D '{}', propertySourceLocations =3D '{}',=
+ propertySourceProperties =3D '{org.springframework.boot.test.autoconfigure=
+.orm.jpa.DataJpaTestContextBootstrapper=3Dtrue}', contextCustomizers =3D se=
+t[[ImportsContextCustomizer@2e8f3b8e key =3D [@org.springframework.boot.tes=
+t.autoconfigure.orm.jpa.AutoConfigureDataJpa(), @org.springframework.boot.t=
+est.autoconfigure.orm.jpa.AutoConfigureTestEntityManager(), @org.springfram=
+ework.test.context.BootstrapWith(value=3Dclass org.springframework.boot.tes=
+t.autoconfigure.orm.jpa.DataJpaTestContextBootstrapper), @org.springframewo=
+rk.boot.test.autoconfigure.filter.TypeExcludeFilters(value=3D[class org.spr=
+ingframework.boot.test.autoconfigure.orm.jpa.DataJpaTypeExcludeFilter]), @o=
+rg.springframework.context.annotation.Import(value=3D[class org.springframe=
+work.boot.autoconfigure.ImportAutoConfigurationImportSelector]), @org.sprin=
+gframework.transaction.annotation.Transactional(propagation=3DREQUIRED, rol=
+lbackForClassName=3D[], readOnly=3Dfalse, isolation=3DDEFAULT, transactionM=
+anager=3D, noRollbackFor=3D[], noRollbackForClassName=3D[], value=3D, timeo=
+ut=3D-1, rollbackFor=3D[]), @org.springframework.transaction.annotation.Ena=
+bleTransactionManagement(mode=3DPROXY, order=3D2147483647, proxyTargetClass=
+=3Dfalse), @org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest=
+(showSql=3Dtrue, excludeAutoConfiguration=3D[], excludeFilters=3D[], useDef=
+aultFilters=3Dtrue, includeFilters=3D[], properties=3D[]), @org.springframe=
+work.boot.test.autoconfigure.core.AutoConfigureCache(cacheProvider=3DNONE),=
+ @org.springframework.boot.autoconfigure.ImportAutoConfiguration(value=3D[]=
+, exclude=3D[], classes=3D[]), @org.springframework.context.annotation.Impo=
+rt(value=3D[class org.springframework.transaction.annotation.TransactionMan=
+agementConfigurationSelector]), @org.junit.runner.RunWith(value=3Dclass org=
+.springframework.test.context.junit4.SpringRunner), @org.springframework.bo=
+ot.test.autoconfigure.OverrideAutoConfiguration(enabled=3Dfalse), @org.spri=
+ngframework.boot.test.autoconfigure.properties.PropertyMapping(value=3Dspri=
+ng.test.database, skip=3DNO), @org.springframework.boot.test.autoconfigure.=
+jdbc.AutoConfigureTestDatabase(replace=3DANY, connection=3DNONE)]], org.spr=
+ingframework.boot.test.context.filter.ExcludeFilterContextCustomizer@38fc55=
+54, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizer=
+Factory$DuplicateJsonObjectContextCustomizer@43b40233, org.springframework.=
+boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot=
+.test.autoconfigure.OverrideAutoConfigurationContextCustomizerFactory$Disab=
+leAutoConfigurationContextCustomizer@16e7b402, org.springframework.boot.tes=
+t.autoconfigure.filter.TypeExcludeFiltersContextCustomizer@351584c0, org.sp=
+ringframework.boot.test.autoconfigure.properties.PropertyMappingContextCust=
+omizer@2d07316e, org.springframework.boot.test.autoconfigure.web.servlet.We=
+bDriverContextCustomizerFactory$Customizer@767a014e], contextLoader =3D 'or=
+g.springframework.boot.test.context.SpringBootContextLoader', parent =3D [n=
+ull]], attributes =3D map[[empty]]]; transaction manager [org.springframewo=
+rk.orm.jpa.JpaTransactionManager@6a1da290]; rollback [true]
+Hibernate: call next value for hibernate_sequence
+2019-06-20 20:22:57.669  INFO 41052 --- [           main] o.s.t.c.transacti=
+on.TransactionContext   : Rolled back transaction for test: [DefaultTestCon=
+text@68724ca5 testClass =3D UserDaoTest, testInstance =3D com.fsd.backend.R=
+epository.UserDaoTest@5cd4c419, testMethod =3D testfindUserById@UserDaoTest=
+, testException =3D [null], mergedContextConfiguration =3D [MergedContextCo=
+nfiguration@7ac58d1a testClass =3D UserDaoTest, locations =3D '{}', classes=
+ =3D '{class com.fsd.backend.BackendApplication}', contextInitializerClasse=
+s =3D '[]', activeProfiles =3D '{}', propertySourceLocations =3D '{}', prop=
+ertySourceProperties =3D '{org.springframework.boot.test.autoconfigure.orm.=
+jpa.DataJpaTestContextBootstrapper=3Dtrue}', contextCustomizers =3D set[[Im=
+portsContextCustomizer@2e8f3b8e key =3D [@org.springframework.boot.test.aut=
+oconfigure.orm.jpa.AutoConfigureDataJpa(), @org.springframework.boot.test.a=
+utoconfigure.orm.jpa.AutoConfigureTestEntityManager(), @org.springframework=
+.test.context.BootstrapWith(value=3Dclass org.springframework.boot.test.aut=
+oconfigure.orm.jpa.DataJpaTestContextBootstrapper), @org.springframework.bo=
+ot.test.autoconfigure.filter.TypeExcludeFilters(value=3D[class org.springfr=
+amework.boot.test.autoconfigure.orm.jpa.DataJpaTypeExcludeFilter]), @org.sp=
+ringframework.context.annotation.Import(value=3D[class org.springframework.=
+boot.autoconfigure.ImportAutoConfigurationImportSelector]), @org.springfram=
+ework.transaction.annotation.Transactional(propagation=3DREQUIRED, rollback=
+ForClassName=3D[], readOnly=3Dfalse, isolation=3DDEFAULT, transactionManage=
+r=3D, noRollbackFor=3D[], noRollbackForClassName=3D[], value=3D, timeout=3D=
+-1, rollbackFor=3D[]), @org.springframework.transaction.annotation.EnableTr=
+ansactionManagement(mode=3DPROXY, order=3D2147483647, proxyTargetClass=3Dfa=
+lse), @org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest(show=
+Sql=3Dtrue, excludeAutoConfiguration=3D[], excludeFilters=3D[], useDefaultF=
+ilters=3Dtrue, includeFilters=3D[], properties=3D[]), @org.springframework.=
+boot.test.autoconfigure.core.AutoConfigureCache(cacheProvider=3DNONE), @org=
+.springframework.boot.autoconfigure.ImportAutoConfiguration(value=3D[], exc=
+lude=3D[], classes=3D[]), @org.springframework.context.annotation.Import(va=
+lue=3D[class org.springframework.transaction.annotation.TransactionManageme=
+ntConfigurationSelector]), @org.junit.runner.RunWith(value=3Dclass org.spri=
+ngframework.test.context.junit4.SpringRunner), @org.springframework.boot.te=
+st.autoconfigure.OverrideAutoConfiguration(enabled=3Dfalse), @org.springfra=
+mework.boot.test.autoconfigure.properties.PropertyMapping(value=3Dspring.te=
+st.database, skip=3DNO), @org.springframework.boot.test.autoconfigure.jdbc.=
+AutoConfigureTestDatabase(replace=3DANY, connection=3DNONE)]], org.springfr=
+amework.boot.test.context.filter.ExcludeFilterContextCustomizer@38fc5554, o=
+rg.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFacto=
+ry$DuplicateJsonObjectContextCustomizer@43b40233, org.springframework.boot.=
+test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test=
+.autoconfigure.OverrideAutoConfigurationContextCustomizerFactory$DisableAut=
+oConfigurationContextCustomizer@16e7b402, org.springframework.boot.test.aut=
+oconfigure.filter.TypeExcludeFiltersContextCustomizer@351584c0, org.springf=
+ramework.boot.test.autoconfigure.properties.PropertyMappingContextCustomize=
+r@2d07316e, org.springframework.boot.test.autoconfigure.web.servlet.WebDriv=
+erContextCustomizerFactory$Customizer@767a014e], contextLoader =3D 'org.spr=
+ingframework.boot.test.context.SpringBootContextLoader', parent =3D [null]]=
+, attributes =3D map[[empty]]]
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.00=
+6 s - in com.fsd.backend.Repository.UserDaoTest
+[INFO] Running com.fsd.backend.Service.ParentServiceTest
+2019-06-20 20:22:57.672  INFO 41052 --- [           main] .b.t.c.SpringBoot=
+TestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarc=
+hy found for test class [com.fsd.backend.Service.ParentServiceTest], using =
+SpringBootContextLoader
+2019-06-20 20:22:57.674  INFO 41052 --- [           main] o.s.t.c.support.A=
+bstractContextLoader    : Could not detect default resource locations for t=
+est class [com.fsd.backend.Service.ParentServiceTest]: no resource found fo=
+r suffixes {-context.xml, Context.groovy}.
+2019-06-20 20:22:57.674  INFO 41052 --- [           main] t.c.s.AnnotationC=
+onfigContextLoaderUtils : Could not detect default configuration classes fo=
+r test class [com.fsd.backend.Service.ParentServiceTest]: ParentServiceTest=
+ does not declare any static, non-private, non-final, nested classes annota=
+ted with @Configuration.
+2019-06-20 20:22:57.717  INFO 41052 --- [           main] .b.t.c.SpringBoot=
+TestContextBootstrapper : Found @SpringBootConfiguration com.fsd.backend.Ba=
+ckendApplication for test class com.fsd.backend.Service.ParentServiceTest
+2019-06-20 20:22:57.720  INFO 41052 --- [           main] .b.t.c.SpringBoot=
+TestContextBootstrapper : Loaded default TestExecutionListener class names =
+from location [META-INF/spring.factories]: [org.springframework.boot.test.m=
+ock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.moc=
+k.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.au=
+toconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boo=
+t.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionList=
+ener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintO=
+nlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfig=
+ure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.co=
+ntext.web.ServletTestExecutionListener, org.springframework.test.context.su=
+pport.DirtiesContextBeforeModesTestExecutionListener, org.springframework.t=
+est.context.support.DependencyInjectionTestExecutionListener, org.springfra=
+mework.test.context.support.DirtiesContextTestExecutionListener, org.spring=
+framework.test.context.transaction.TransactionalTestExecutionListener, org.=
+springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2019-06-20 20:22:57.721  INFO 41052 --- [           main] .b.t.c.SpringBoot=
+TestContextBootstrapper : Using TestExecutionListeners: [org.springframewor=
+k.test.context.web.ServletTestExecutionListener@31552b62, org.springframewo=
+rk.test.context.support.DirtiesContextBeforeModesTestExecutionListener@450e=
+0878, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListen=
+er@6e03d5dd, org.springframework.boot.test.autoconfigure.SpringBootDependen=
+cyInjectionTestExecutionListener@7249f579, org.springframework.test.context=
+.support.DirtiesContextTestExecutionListener@6adfde69, org.springframework.=
+test.context.transaction.TransactionalTestExecutionListener@5f275682, org.s=
+pringframework.test.context.jdbc.SqlScriptsTestExecutionListener@2ffadd86, =
+org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@=
+12a5173d, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTest=
+ExecutionListener@61daf96, org.springframework.boot.test.autoconfigure.web.=
+client.MockRestServiceServerResetTestExecutionListener@636b6a91, org.spring=
+framework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTest=
+ExecutionListener@1a049d97, org.springframework.boot.test.autoconfigure.web=
+.servlet.WebDriverTestExecutionListener@20227d15]
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =3D=3D=3D=3D=3D=3D=3D=3D=3D|_|=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D|_=
+__/=3D/_/_/_/
+ :: Spring Boot ::        (v2.1.4.RELEASE)
+
+2019-06-20 20:22:58.127  INFO 41052 --- [           main] c.fsd.backend.Ser=
+vice.ParentServiceTest  : Starting ParentServiceTest on Javafs with PID 410=
+52 (started by Admin in C:\Users\Admin\.jenkins\workspace\aaa\backend)
+2019-06-20 20:22:58.128  INFO 41052 --- [           main] c.fsd.backend.Ser=
+vice.ParentServiceTest  : No active profile set, falling back to default pr=
+ofiles: default
+2019-06-20 20:22:58.549  INFO 41052 --- [           main] .s.d.r.c.Reposito=
+ryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT=
+ mode.
+2019-06-20 20:22:58.575  INFO 41052 --- [           main] .s.d.r.c.Reposito=
+ryConfigurationDelegate : Finished Spring Data repository scanning in 25ms.=
+ Found 4 repository interfaces.
+2019-06-20 20:22:58.995  INFO 41052 --- [           main] trationDelegate$B=
+eanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.=
+ProxyTransactionManagementConfiguration' of type [org.springframework.trans=
+action.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpring=
+CGLIB$$2ea6c20c] is not eligible for getting processed by all BeanPostProce=
+ssors (for example: not eligible for auto-proxying)
+2019-06-20 20:22:59.204  INFO 41052 --- [           main] com.zaxxer.hikari=
+.HikariDataSource       : HikariPool-1 - Starting...
+2019-06-20 20:22:59.255  INFO 41052 --- [           main] com.zaxxer.hikari=
+.HikariDataSource       : HikariPool-1 - Start completed.
+2019-06-20 20:22:59.304  INFO 41052 --- [           main] o.hibernate.jpa.i=
+nternal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+=09name: default
+=09...]
+2019-06-20 20:22:59.333  INFO 41052 --- [           main] org.hibernate.dia=
+lect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H=
+2Dialect
+2019-06-20 20:22:59.675  INFO 41052 --- [           main] o.h.t.schema.inte=
+rnal.SchemaCreatorImpl  : HHH000476: Executing import script 'org.hibernate=
+.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@5eed1a62'
+2019-06-20 20:22:59.675  INFO 41052 --- [           main] j.LocalContainerE=
+ntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persiste=
+nce unit 'default'
+2019-06-20 20:23:01.224  INFO 41052 --- [           main] o.s.s.concurrent.=
+ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExec=
+utor'
+2019-06-20 20:23:01.253  WARN 41052 --- [           main] aWebConfiguration=
+$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Th=
+erefore, database queries may be performed during view rendering. Explicitl=
+y configure spring.jpa.open-in-view to disable this warning
+2019-06-20 20:23:01.675  INFO 41052 --- [           main] c.fsd.backend.Ser=
+vice.ParentServiceTest  : Started ParentServiceTest in 3.952 seconds (JVM r=
+unning for 31.285)
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.11=
+6 s - in com.fsd.backend.Service.ParentServiceTest
+[INFO] Running com.fsd.backend.Service.ProjectServiceTest
+2019-06-20 20:23:01.720  INFO 41052 --- [           main] .b.t.c.SpringBoot=
+TestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarc=
+hy found for test class [com.fsd.backend.Service.ProjectServiceTest], using=
+ SpringBootContextLoader
+2019-06-20 20:23:01.721  INFO 41052 --- [           main] o.s.t.c.support.A=
+bstractContextLoader    : Could not detect default resource locations for t=
+est class [com.fsd.backend.Service.ProjectServiceTest]: no resource found f=
+or suffixes {-context.xml, Context.groovy}.
+2019-06-20 20:23:01.721  INFO 41052 --- [           main] t.c.s.AnnotationC=
+onfigContextLoaderUtils : Could not detect default configuration classes fo=
+r test class [com.fsd.backend.Service.ProjectServiceTest]: ProjectServiceTe=
+st does not declare any static, non-private, non-final, nested classes anno=
+tated with @Configuration.
+2019-06-20 20:23:01.723  INFO 41052 --- [           main] .b.t.c.SpringBoot=
+TestContextBootstrapper : Found @SpringBootConfiguration com.fsd.backend.Ba=
+ckendApplication for test class com.fsd.backend.Service.ProjectServiceTest
+2019-06-20 20:23:01.725  INFO 41052 --- [           main] .b.t.c.SpringBoot=
+TestContextBootstrapper : Loaded default TestExecutionListener class names =
+from location [META-INF/spring.factories]: [org.springframework.boot.test.m=
+ock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.moc=
+k.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.au=
+toconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boo=
+t.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionList=
+ener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintO=
+nlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfig=
+ure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.co=
+ntext.web.ServletTestExecutionListener, org.springframework.test.context.su=
+pport.DirtiesContextBeforeModesTestExecutionListener, org.springframework.t=
+est.context.support.DependencyInjectionTestExecutionListener, org.springfra=
+mework.test.context.support.DirtiesContextTestExecutionListener, org.spring=
+framework.test.context.transaction.TransactionalTestExecutionListener, org.=
+springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2019-06-20 20:23:01.725  INFO 41052 --- [           main] .b.t.c.SpringBoot=
+TestContextBootstrapper : Using TestExecutionListeners: [org.springframewor=
+k.test.context.web.ServletTestExecutionListener@465d6dcc, org.springframewo=
+rk.test.context.support.DirtiesContextBeforeModesTestExecutionListener@5250=
+3e70, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListen=
+er@7c41206e, org.springframework.boot.test.autoconfigure.SpringBootDependen=
+cyInjectionTestExecutionListener@23261bcd, org.springframework.test.context=
+.support.DirtiesContextTestExecutionListener@eb82168, org.springframework.t=
+est.context.transaction.TransactionalTestExecutionListener@5d482d71, org.sp=
+ringframework.test.context.jdbc.SqlScriptsTestExecutionListener@28ff24e6, o=
+rg.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@3=
+b14aa47, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestE=
+xecutionListener@74e87f2c, org.springframework.boot.test.autoconfigure.web.=
+client.MockRestServiceServerResetTestExecutionListener@6857f765, org.spring=
+framework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTest=
+ExecutionListener@395e269d, org.springframework.boot.test.autoconfigure.web=
+.servlet.WebDriverTestExecutionListener@2786f563]
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =3D=3D=3D=3D=3D=3D=3D=3D=3D|_|=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D|_=
+__/=3D/_/_/_/
+ :: Spring Boot ::        (v2.1.4.RELEASE)
+
+2019-06-20 20:23:01.753  INFO 41052 --- [           main] c.f.backend.Servi=
+ce.ProjectServiceTest   : Starting ProjectServiceTest on Javafs with PID 41=
+052 (started by Admin in C:\Users\Admin\.jenkins\workspace\aaa\backend)
+2019-06-20 20:23:01.753  INFO 41052 --- [           main] c.f.backend.Servi=
+ce.ProjectServiceTest   : No active profile set, falling back to default pr=
+ofiles: default
+2019-06-20 20:23:02.110  INFO 41052 --- [           main] .s.d.r.c.Reposito=
+ryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT=
+ mode.
+2019-06-20 20:23:02.132  INFO 41052 --- [           main] .s.d.r.c.Reposito=
+ryConfigurationDelegate : Finished Spring Data repository scanning in 21ms.=
+ Found 4 repository interfaces.
+2019-06-20 20:23:02.365  INFO 41052 --- [           main] trationDelegate$B=
+eanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.=
+ProxyTransactionManagementConfiguration' of type [org.springframework.trans=
+action.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpring=
+CGLIB$$2ea6c20c] is not eligible for getting processed by all BeanPostProce=
+ssors (for example: not eligible for auto-proxying)
+2019-06-20 20:23:02.501  INFO 41052 --- [           main] com.zaxxer.hikari=
+.HikariDataSource       : HikariPool-2 - Starting...
+2019-06-20 20:23:02.505  INFO 41052 --- [           main] com.zaxxer.hikari=
+.HikariDataSource       : HikariPool-2 - Start completed.
+2019-06-20 20:23:02.536  INFO 41052 --- [           main] o.hibernate.jpa.i=
+nternal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+=09name: default
+=09...]
+2019-06-20 20:23:02.550  INFO 41052 --- [           main] org.hibernate.dia=
+lect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H=
+2Dialect
+2019-06-20 20:23:03.060  INFO 41052 --- [           main] o.h.t.schema.inte=
+rnal.SchemaCreatorImpl  : HHH000476: Executing import script 'org.hibernate=
+.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@5eed1a62'
+2019-06-20 20:23:03.060  INFO 41052 --- [           main] j.LocalContainerE=
+ntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persiste=
+nce unit 'default'
+2019-06-20 20:23:03.679  INFO 41052 --- [           main] o.s.s.concurrent.=
+ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExec=
+utor'
+2019-06-20 20:23:03.701  WARN 41052 --- [           main] aWebConfiguration=
+$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Th=
+erefore, database queries may be performed during view rendering. Explicitl=
+y configure spring.jpa.open-in-view to disable this warning
+2019-06-20 20:23:04.063  INFO 41052 --- [           main] c.f.backend.Servi=
+ce.ProjectServiceTest   : Started ProjectServiceTest in 2.334 seconds (JVM =
+running for 33.668)
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.43=
+3 s - in com.fsd.backend.Service.ProjectServiceTest
+[INFO] Running com.fsd.backend.Service.TaskServiceTest
+2019-06-20 20:23:04.152  INFO 41052 --- [           main] .b.t.c.SpringBoot=
+TestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarc=
+hy found for test class [com.fsd.backend.Service.TaskServiceTest], using Sp=
+ringBootContextLoader
+2019-06-20 20:23:04.153  INFO 41052 --- [           main] o.s.t.c.support.A=
+bstractContextLoader    : Could not detect default resource locations for t=
+est class [com.fsd.backend.Service.TaskServiceTest]: no resource found for =
+suffixes {-context.xml, Context.groovy}.
+2019-06-20 20:23:04.153  INFO 41052 --- [           main] t.c.s.AnnotationC=
+onfigContextLoaderUtils : Could not detect default configuration classes fo=
+r test class [com.fsd.backend.Service.TaskServiceTest]: TaskServiceTest doe=
+s not declare any static, non-private, non-final, nested classes annotated =
+with @Configuration.
+2019-06-20 20:23:04.155  INFO 41052 --- [           main] .b.t.c.SpringBoot=
+TestContextBootstrapper : Found @SpringBootConfiguration com.fsd.backend.Ba=
+ckendApplication for test class com.fsd.backend.Service.TaskServiceTest
+2019-06-20 20:23:04.157  INFO 41052 --- [           main] .b.t.c.SpringBoot=
+TestContextBootstrapper : Loaded default TestExecutionListener class names =
+from location [META-INF/spring.factories]: [org.springframework.boot.test.m=
+ock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.moc=
+k.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.au=
+toconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boo=
+t.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionList=
+ener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintO=
+nlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfig=
+ure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.co=
+ntext.web.ServletTestExecutionListener, org.springframework.test.context.su=
+pport.DirtiesContextBeforeModesTestExecutionListener, org.springframework.t=
+est.context.support.DependencyInjectionTestExecutionListener, org.springfra=
+mework.test.context.support.DirtiesContextTestExecutionListener, org.spring=
+framework.test.context.transaction.TransactionalTestExecutionListener, org.=
+springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2019-06-20 20:23:04.157  INFO 41052 --- [           main] .b.t.c.SpringBoot=
+TestContextBootstrapper : Using TestExecutionListeners: [org.springframewor=
+k.test.context.web.ServletTestExecutionListener@567d909c, org.springframewo=
+rk.test.context.support.DirtiesContextBeforeModesTestExecutionListener@b903=
+a02, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListene=
+r@1ed6d472, org.springframework.boot.test.autoconfigure.SpringBootDependenc=
+yInjectionTestExecutionListener@72e71d76, org.springframework.test.context.=
+support.DirtiesContextTestExecutionListener@48a49ac6, org.springframework.t=
+est.context.transaction.TransactionalTestExecutionListener@426ee9fa, org.sp=
+ringframework.test.context.jdbc.SqlScriptsTestExecutionListener@6a33d081, o=
+rg.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@2=
+0757c1c, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestE=
+xecutionListener@4ceba07e, org.springframework.boot.test.autoconfigure.web.=
+client.MockRestServiceServerResetTestExecutionListener@79ffa120, org.spring=
+framework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTest=
+ExecutionListener@dbcd146, org.springframework.boot.test.autoconfigure.web.=
+servlet.WebDriverTestExecutionListener@6a2d971]
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =3D=3D=3D=3D=3D=3D=3D=3D=3D|_|=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D|_=
+__/=3D/_/_/_/
+ :: Spring Boot ::        (v2.1.4.RELEASE)
+
+2019-06-20 20:23:04.184  INFO 41052 --- [           main] com.fsd.backend.S=
+ervice.TaskServiceTest  : Starting TaskServiceTest on Javafs with PID 41052=
+ (started by Admin in C:\Users\Admin\.jenkins\workspace\aaa\backend)
+2019-06-20 20:23:04.184  INFO 41052 --- [           main] com.fsd.backend.S=
+ervice.TaskServiceTest  : No active profile set, falling back to default pr=
+ofiles: default
+2019-06-20 20:23:04.488  INFO 41052 --- [           main] .s.d.r.c.Reposito=
+ryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT=
+ mode.
+2019-06-20 20:23:04.508  INFO 41052 --- [           main] .s.d.r.c.Reposito=
+ryConfigurationDelegate : Finished Spring Data repository scanning in 20ms.=
+ Found 4 repository interfaces.
+2019-06-20 20:23:04.644  INFO 41052 --- [           main] trationDelegate$B=
+eanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.=
+ProxyTransactionManagementConfiguration' of type [org.springframework.trans=
+action.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpring=
+CGLIB$$2ea6c20c] is not eligible for getting processed by all BeanPostProce=
+ssors (for example: not eligible for auto-proxying)
+2019-06-20 20:23:04.746  INFO 41052 --- [           main] com.zaxxer.hikari=
+.HikariDataSource       : HikariPool-3 - Starting...
+2019-06-20 20:23:04.748  INFO 41052 --- [           main] com.zaxxer.hikari=
+.HikariDataSource       : HikariPool-3 - Start completed.
+2019-06-20 20:23:04.776  INFO 41052 --- [           main] o.hibernate.jpa.i=
+nternal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+=09name: default
+=09...]
+2019-06-20 20:23:04.790  INFO 41052 --- [           main] org.hibernate.dia=
+lect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H=
+2Dialect
+2019-06-20 20:23:04.917  INFO 41052 --- [           main] o.h.t.schema.inte=
+rnal.SchemaCreatorImpl  : HHH000476: Executing import script 'org.hibernate=
+.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@5eed1a62'
+2019-06-20 20:23:04.917  INFO 41052 --- [           main] j.LocalContainerE=
+ntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persiste=
+nce unit 'default'
+2019-06-20 20:23:05.724  INFO 41052 --- [           main] o.s.s.concurrent.=
+ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExec=
+utor'
+2019-06-20 20:23:05.743  WARN 41052 --- [           main] aWebConfiguration=
+$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Th=
+erefore, database queries may be performed during view rendering. Explicitl=
+y configure spring.jpa.open-in-view to disable this warning
+2019-06-20 20:23:06.121  INFO 41052 --- [           main] com.fsd.backend.S=
+ervice.TaskServiceTest  : Started TaskServiceTest in 1.962 seconds (JVM run=
+ning for 35.726)
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.95=
+9 s - in com.fsd.backend.Service.TaskServiceTest
+[INFO] Running com.fsd.backend.Service.UserServiceTest
+2019-06-20 20:23:06.213  INFO 41052 --- [           main] .b.t.c.SpringBoot=
+TestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarc=
+hy found for test class [com.fsd.backend.Service.UserServiceTest], using Sp=
+ringBootContextLoader
+2019-06-20 20:23:06.213  INFO 41052 --- [           main] o.s.t.c.support.A=
+bstractContextLoader    : Could not detect default resource locations for t=
+est class [com.fsd.backend.Service.UserServiceTest]: no resource found for =
+suffixes {-context.xml, Context.groovy}.
+2019-06-20 20:23:06.214  INFO 41052 --- [           main] t.c.s.AnnotationC=
+onfigContextLoaderUtils : Could not detect default configuration classes fo=
+r test class [com.fsd.backend.Service.UserServiceTest]: UserServiceTest doe=
+s not declare any static, non-private, non-final, nested classes annotated =
+with @Configuration.
+2019-06-20 20:23:06.214  INFO 41052 --- [           main] .b.t.c.SpringBoot=
+TestContextBootstrapper : Found @SpringBootConfiguration com.fsd.backend.Ba=
+ckendApplication for test class com.fsd.backend.Service.UserServiceTest
+2019-06-20 20:23:06.216  INFO 41052 --- [           main] .b.t.c.SpringBoot=
+TestContextBootstrapper : Loaded default TestExecutionListener class names =
+from location [META-INF/spring.factories]: [org.springframework.boot.test.m=
+ock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.moc=
+k.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.au=
+toconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boo=
+t.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionList=
+ener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintO=
+nlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfig=
+ure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.co=
+ntext.web.ServletTestExecutionListener, org.springframework.test.context.su=
+pport.DirtiesContextBeforeModesTestExecutionListener, org.springframework.t=
+est.context.support.DependencyInjectionTestExecutionListener, org.springfra=
+mework.test.context.support.DirtiesContextTestExecutionListener, org.spring=
+framework.test.context.transaction.TransactionalTestExecutionListener, org.=
+springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2019-06-20 20:23:06.216  INFO 41052 --- [           main] .b.t.c.SpringBoot=
+TestContextBootstrapper : Using TestExecutionListeners: [org.springframewor=
+k.test.context.web.ServletTestExecutionListener@48c14a79, org.springframewo=
+rk.test.context.support.DirtiesContextBeforeModesTestExecutionListener@3b43=
+0bec, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListen=
+er@75bbe551, org.springframework.boot.test.autoconfigure.SpringBootDependen=
+cyInjectionTestExecutionListener@175fbffd, org.springframework.test.context=
+.support.DirtiesContextTestExecutionListener@558fbded, org.springframework.=
+test.context.transaction.TransactionalTestExecutionListener@7630d0db, org.s=
+pringframework.test.context.jdbc.SqlScriptsTestExecutionListener@5c8b2221, =
+org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@=
+3641de1a, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTest=
+ExecutionListener@1e896dea, org.springframework.boot.test.autoconfigure.web=
+.client.MockRestServiceServerResetTestExecutionListener@6ecfc0e8, org.sprin=
+gframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTes=
+tExecutionListener@6b507d3a, org.springframework.boot.test.autoconfigure.we=
+b.servlet.WebDriverTestExecutionListener@53d9cf44]
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =3D=3D=3D=3D=3D=3D=3D=3D=3D|_|=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D|_=
+__/=3D/_/_/_/
+ :: Spring Boot ::        (v2.1.4.RELEASE)
+
+2019-06-20 20:23:06.247  INFO 41052 --- [           main] com.fsd.backend.S=
+ervice.UserServiceTest  : Starting UserServiceTest on Javafs with PID 41052=
+ (started by Admin in C:\Users\Admin\.jenkins\workspace\aaa\backend)
+2019-06-20 20:23:06.248  INFO 41052 --- [           main] com.fsd.backend.S=
+ervice.UserServiceTest  : No active profile set, falling back to default pr=
+ofiles: default
+2019-06-20 20:23:06.662  INFO 41052 --- [           main] .s.d.r.c.Reposito=
+ryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT=
+ mode.
+2019-06-20 20:23:06.683  INFO 41052 --- [           main] .s.d.r.c.Reposito=
+ryConfigurationDelegate : Finished Spring Data repository scanning in 20ms.=
+ Found 4 repository interfaces.
+2019-06-20 20:23:06.810  INFO 41052 --- [           main] trationDelegate$B=
+eanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.=
+ProxyTransactionManagementConfiguration' of type [org.springframework.trans=
+action.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpring=
+CGLIB$$2ea6c20c] is not eligible for getting processed by all BeanPostProce=
+ssors (for example: not eligible for auto-proxying)
+2019-06-20 20:23:06.906  INFO 41052 --- [           main] com.zaxxer.hikari=
+.HikariDataSource       : HikariPool-4 - Starting...
+2019-06-20 20:23:06.908  INFO 41052 --- [           main] com.zaxxer.hikari=
+.HikariDataSource       : HikariPool-4 - Start completed.
+2019-06-20 20:23:06.936  INFO 41052 --- [           main] o.hibernate.jpa.i=
+nternal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+=09name: default
+=09...]
+2019-06-20 20:23:06.949  INFO 41052 --- [           main] org.hibernate.dia=
+lect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H=
+2Dialect
+2019-06-20 20:23:07.132  INFO 41052 --- [           main] o.h.t.schema.inte=
+rnal.SchemaCreatorImpl  : HHH000476: Executing import script 'org.hibernate=
+.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@5eed1a62'
+2019-06-20 20:23:07.133  INFO 41052 --- [           main] j.LocalContainerE=
+ntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persiste=
+nce unit 'default'
+2019-06-20 20:23:07.666  INFO 41052 --- [           main] o.s.s.concurrent.=
+ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExec=
+utor'
+2019-06-20 20:23:07.683  WARN 41052 --- [           main] aWebConfiguration=
+$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Th=
+erefore, database queries may be performed during view rendering. Explicitl=
+y configure spring.jpa.open-in-view to disable this warning
+2019-06-20 20:23:08.050  INFO 41052 --- [           main] com.fsd.backend.S=
+ervice.UserServiceTest  : Started UserServiceTest in 1.832 seconds (JVM run=
+ning for 37.655)
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.91=
+8 s - in com.fsd.backend.Service.UserServiceTest
+2019-06-20 20:23:08.292  INFO 41052 --- [      Thread-11] j.LocalContainerE=
+ntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence =
+unit 'default'
+2019-06-20 20:23:08.292  INFO 41052 --- [      Thread-11] .SchemaDropperImp=
+l$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema a=
+s part of SessionFactory shut-down'
+Hibernate: drop table parent_task if exists
+Hibernate: drop table project if exists
+Hibernate: drop table project_id if exists
+2019-06-20 20:23:08.326  INFO 41052 --- [       Thread-7] o.s.s.concurrent.=
+ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExe=
+cutor'
+2019-06-20 20:23:08.338  INFO 41052 --- [       Thread-3] o.s.s.concurrent.=
+ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExe=
+cutor'
+2019-06-20 20:23:08.353  INFO 41052 --- [      Thread-13] o.s.s.concurrent.=
+ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExe=
+cutor'
+2019-06-20 20:23:08.357  INFO 41052 --- [      Thread-13] j.LocalContainerE=
+ntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence =
+unit 'default'
+2019-06-20 20:23:08.357  INFO 41052 --- [      Thread-13] .SchemaDropperImp=
+l$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema a=
+s part of SessionFactory shut-down'
+Hibernate: drop table task if exists
+Hibernate: drop table task_id if exists
+Hibernate: drop table user if exists
+Hibernate: drop sequence if exists hibernate_sequence
+2019-06-20 20:23:08.418  INFO 41052 --- [      Thread-15] o.s.s.concurrent.=
+ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExe=
+cutor'
+2019-06-20 20:23:08.419  INFO 41052 --- [      Thread-15] j.LocalContainerE=
+ntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence =
+unit 'default'
+2019-06-20 20:23:08.419  INFO 41052 --- [      Thread-15] .SchemaDropperImp=
+l$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema a=
+s part of SessionFactory shut-down'
+2019-06-20 20:23:08.437  INFO 41052 --- [       Thread-9] o.s.s.concurrent.=
+ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExe=
+cutor'
+2019-06-20 20:23:08.447  INFO 41052 --- [       Thread-5] o.s.s.concurrent.=
+ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExe=
+cutor'
+2019-06-20 20:23:08.459  INFO 41052 --- [      Thread-17] o.s.s.concurrent.=
+ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExe=
+cutor'
+2019-06-20 20:23:08.460  INFO 41052 --- [      Thread-17] j.LocalContainerE=
+ntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence =
+unit 'default'
+2019-06-20 20:23:08.460  INFO 41052 --- [      Thread-17] .SchemaDropperImp=
+l$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema a=
+s part of SessionFactory shut-down'
+2019-06-20 20:23:08.463  INFO 41052 --- [      Thread-19] o.s.s.concurrent.=
+ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExe=
+cutor'
+2019-06-20 20:23:08.463  INFO 41052 --- [      Thread-19] j.LocalContainerE=
+ntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence =
+unit 'default'
+2019-06-20 20:23:08.463  INFO 41052 --- [      Thread-19] .SchemaDropperImp=
+l$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema a=
+s part of SessionFactory shut-down'
+2019-06-20 20:23:08.493  INFO 41052 --- [      Thread-13] com.zaxxer.hikari=
+.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-06-20 20:23:08.549  INFO 41052 --- [      Thread-13] com.zaxxer.hikari=
+.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-06-20 20:23:08.549 ERROR 41052 --- [      Thread-19] .SchemaDropperImp=
+l$DelayedDropActionImpl : HHH000478: Unsuccessful: drop sequence if exists =
+hibernate_sequence
+2019-06-20 20:23:08.550  INFO 41052 --- [      Thread-19] com.zaxxer.hikari=
+.HikariDataSource       : HikariPool-4 - Shutdown initiated...
+2019-06-20 20:23:08.565  INFO 41052 --- [      Thread-19] com.zaxxer.hikari=
+.HikariDataSource       : HikariPool-4 - Shutdown completed.
+2019-06-20 20:23:08.573 ERROR 41052 --- [      Thread-15] .SchemaDropperImp=
+l$DelayedDropActionImpl : HHH000478: Unsuccessful: drop table parent_task i=
+f exists
+2019-06-20 20:23:08.577 ERROR 41052 --- [      Thread-17] .SchemaDropperImp=
+l$DelayedDropActionImpl : HHH000478: Unsuccessful: drop table project if ex=
+ists
+2019-06-20 20:23:08.579  INFO 41052 --- [      Thread-15] com.zaxxer.hikari=
+.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2019-06-20 20:23:08.579  INFO 41052 --- [      Thread-17] com.zaxxer.hikari=
+.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2019-06-20 20:23:08.583  INFO 41052 --- [      Thread-17] com.zaxxer.hikari=
+.HikariDataSource       : HikariPool-3 - Shutdown completed.
+2019-06-20 20:23:08.586  INFO 41052 --- [      Thread-15] com.zaxxer.hikari=
+.HikariDataSource       : HikariPool-2 - Shutdown completed.
+[INFO]=20
+[INFO] Results:
+[INFO]=20
+[WARNING] Tests run: 46, Failures: 0, Errors: 0, Skipped: 1
+[INFO]=20
+[INFO]=20
+[INFO] --- maven-war-plugin:3.2.2:war (default-war) @ backend ---
+[INFO] Packaging webapp
+[INFO] Assembling webapp [backend] in [C:\Users\Admin\.jenkins\workspace\aa=
+a\backend\target\backend-0.0.1-SNAPSHOT]
+[INFO] Processing war project
+[INFO] Webapp assembled in [508 msecs]
+[INFO] Building war: C:\Users\Admin\.jenkins\workspace\aaa\backend\target\b=
+ackend-0.0.1-SNAPSHOT.war
+[INFO]=20
+[INFO] --- spring-boot-maven-plugin:2.1.4.RELEASE:repackage (repackage) @ b=
+ackend ---
+[INFO] Replacing main artifact with repackaged archive
+[INFO]=20
+[INFO] --- jacoco-maven-plugin:0.7.6.201602180812:report (jacoco-site) @ ba=
+ckend ---
+[INFO] Analyzed bundle 'backend' with 13 classes
+[INFO]=20
+[INFO] --- maven-install-plugin:2.5.2:install (default-install) @ backend -=
+--
+[INFO] Installing C:\Users\Admin\.jenkins\workspace\aaa\backend\target\back=
+end-0.0.1-SNAPSHOT.war to C:\Users\Admin\.m2\repository\com\fsd\backend\0.0=
+.1-SNAPSHOT\backend-0.0.1-SNAPSHOT.war
+[INFO] Installing C:\Users\Admin\.jenkins\workspace\aaa\backend\pom.xml to =
+C:\Users\Admin\.m2\repository\com\fsd\backend\0.0.1-SNAPSHOT\backend-0.0.1-=
+SNAPSHOT.pom
+[INFO] --------------------------------------------------------------------=
+----
+[INFO] BUILD SUCCESS
+[INFO] --------------------------------------------------------------------=
+----
+[INFO] Total time: 54.832 s
+[INFO] Finished at: 2019-06-20T20:23:15+05:30
+[INFO] Final Memory: 49M/535M
+[INFO] --------------------------------------------------------------------=
+----
+[Pipeline] }
+[Pipeline] // stage
+[Pipeline] stage
+[Pipeline] { (Archive war)
+[Pipeline] archiveArtifacts
+Archiving artifacts
+[Pipeline] }
+[Pipeline] // stage
+[Pipeline] stage
+[Pipeline] { (Junit Result)
+[Pipeline] step
+Recording test results
+[Pipeline] }
+[Pipeline] // stage
+[Pipeline] stage
+[Pipeline] { (Email: Build Summary Report)
+[Pipeline] emailext
+Sending email to: sachin.kumar346a39@gmail.com
+
+------=_Part_9_661706338.1561042397191--
