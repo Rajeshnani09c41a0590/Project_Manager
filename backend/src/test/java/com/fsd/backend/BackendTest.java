@@ -15,7 +15,7 @@ public class BackendTest {
 	/**
 	 * Main.
 	 */
-	@Ignore
+	
 	@Test
      public void main() {
 		BackendApplication.main(new String[] {});
